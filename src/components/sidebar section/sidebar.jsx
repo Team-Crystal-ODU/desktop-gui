@@ -17,7 +17,13 @@ const Sidebar = () => {
                 <h3 className="divTitle">
                     QUICK MENU
                 </h3>
-
+                <ul className="menuLists grid">
+                    <li className="listItem">
+                        <a href="#" className="menuLink flex">
+                            icon
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     );

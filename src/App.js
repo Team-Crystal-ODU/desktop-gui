@@ -1,6 +1,8 @@
 import './App.css';
+import Sidebar from './components/sidebar section/Sidebar';
+import Body from './components/body section/Body';
 
-function App() {
+/* function App() {
   return (
     <div data-testid="test-1" className="App">
       <header className="App-header">
@@ -8,6 +10,15 @@ function App() {
           Welcome to World Space!
         </p>
       </header>
+    </div>
+  );
+} */
+
+function App() {
+  return (
+    <div data-testid="test-1">
+        <Sidebar />
+        <Body />
     </div>
   );
 }

@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-.App {
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  transition: .3s ease;
+  background-color: #003442;
+  color: white;
+} 
+
+/* .App {
   text-align: center;
-}
+} 
 
 .App-header {
   background-color: #003442;
@@ -13,12 +23,4 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-* {
-  padding: 0;
-  box-sizing: border-box;
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  transition: .3s ease;
-}
+} */

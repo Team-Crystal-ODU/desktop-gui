@@ -16,7 +16,7 @@ import Body from './components/body section/Body';
 
 function App() {
   return (
-    <div data-testid="test-1">
+    <div data-testid="test-1" className="container">
         <Sidebar />
         <Body />
     </div>

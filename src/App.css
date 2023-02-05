@@ -100,3 +100,9 @@ body {
   box-shadow: 2px 2px 8px grey;
   color: var(--greyText);
 }
+
+/* Hide the scroll bar */
+
+::-webkit-scrollbar {
+  display: none;
+}

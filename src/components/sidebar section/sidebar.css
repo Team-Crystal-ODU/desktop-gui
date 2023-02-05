@@ -116,4 +116,11 @@
 .sideBar .sideBarCard .cardContent p {
   font-size: var(--normalFontSize);
   color: var(--textColor);
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+.sideBar .sideBarCard .cardContent .btn {
+  position: relative;
+  color: var(--textColor);
+  z-index: 1000;
 }/*# sourceMappingURL=sidebar.css.map */

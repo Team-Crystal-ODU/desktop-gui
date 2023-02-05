@@ -99,12 +99,9 @@ const Sidebar = () => {
             <div className="sideBarCard">
                 <BsQuestionCircle className="icon" />
                 <div className="cardContent">
-                    <div className="circle1"></div>
-                    <div className="circle1"></div>
-
                     <h3>Help Center</h3>
-                    <p>Having trouble in World Space, please contact us.</p>
-                    <button className="btn">Go to help center</button>
+                    {/*<p>Having trouble in World Space, please contact us.</p>
+                    <button className="btn">Go to help center</button>*/}
                 </div>
             </div>
         </div>

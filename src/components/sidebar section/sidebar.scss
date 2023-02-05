@@ -1,0 +1,138 @@
+/* Colors and styles (Default) */
+:root {
+    /* Colors will be changed */
+    --PrimaryColor: #4a717b; 
+    --HoverColor: #bdf094;
+    --brightGreen: #00cb8d;
+    --paleGreen: hsl(96, 75%, 89%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);
+    --bgColor: #003442;
+    --greyText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+  
+    /* Font and typography */
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+}
+
+.sideBar {
+    background: var(--PrimaryColor);
+    box-shadow: 1px 0px 4px;
+    color: var(--greyText);
+    width: 18%;
+    height: 100%;
+    gap: 3rem;
+    overflow: auto;
+
+    .logoDiv {
+        padding: 1.5rem 1.5rem 0;
+        cursor: pointer;
+
+        img {
+            max-width: 20px;
+            margin-right: .5rem;
+            background: var(--inputColor);
+            border-radius: 2px;
+            padding: .2rem;
+        }
+
+        h2 {
+            font-size: var(--h2FontSize);
+            color: var(--whiteColor);
+        }
+    }
+
+    .menuDiv, .settingsDiv {
+        .divTitle {
+            font-size: var(--h3FontSize);
+            color: var(--blackColor);
+            padding: 0 1.5rem 1.5rem;
+        }
+
+        .menuLists {
+            .listItem {
+                padding: .2rem 1.5rem;
+                width: 100%;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    height: 0%;
+                    left: 0;
+                    width: 5px;
+                    bottom: 0;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    background: var(--brightGreen);
+                }
+
+                .menuLink {
+                    color: var(--whiteColor);
+                    font-weight: 500;
+                    transition: 0;
+                    .icon {
+                        margin-right: .5rem;
+                    }
+                }
+
+                &:hover .menuLink {
+                    color: var(--brightGreen);
+                    transition: 0;
+                }
+
+                &:hover::before {
+                    height: 100%;
+                    transform: .3s ease;
+                }
+            }
+        }
+    }
+
+    .sideBarCard {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+        position: relative;
+
+        .icon {
+            position: absolute;
+            background: var(--bgColor);
+            border: 10px solid var(--PrimaryColor);
+            font-size: 3rem;
+            border-radius: 50%;
+            top: -8px;
+            right: 50%;
+            transform: translate(50%);
+            z-index: 100;
+        }
+
+        .cardContent {
+           position: relative;
+           padding: 1rem;
+           background: var(--bgColor); 
+           border-radius: 10px;
+           overflow: hidden;
+
+           h3 {
+            font-size: var(--h3FontSize);
+            margin-top: 1rem;
+            padding: 1rem 0;
+            font-weight: 800;
+            color: var(--inputColor);
+           }
+
+           p {
+            font-size: var(--normalFontSize);
+            color: var(--textColor);
+           }
+        }
+    }
+}

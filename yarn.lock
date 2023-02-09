@@ -4075,6 +4075,13 @@
   dependencies:
     "jake" "^10.8.5"
 
+"electron-cgi@^1.0.6":
+  "integrity" "sha512-QjhRZtWgokc6Ox/a7CTgUHclz/IX5jn9qxpmyqjaYkI28AShWM8Yw6TwG5jIxGTOmAYsZsRicZlSeXAKL7u4PQ=="
+  "resolved" "https://registry.npmjs.org/electron-cgi/-/electron-cgi-1.0.6.tgz"
+  "version" "1.0.6"
+  dependencies:
+    "uuid" "^3.3.2"
+
 "electron-is-dev@^2.0.0":
   "integrity" "sha512-3X99K852Yoqu9AcW50qz3ibYBWY79/pBhlMCab8ToEWS48R0T9tyxRiQhwylE7zQdXrMnx2JKqUJyMPmt5FBqA=="
   "resolved" "https://registry.npmjs.org/electron-is-dev/-/electron-is-dev-2.0.0.tgz"
@@ -9462,6 +9469,11 @@
   "integrity" "sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA=="
   "resolved" "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz"
   "version" "1.0.1"
+
+"uuid@^3.3.2":
+  "integrity" "sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A=="
+  "resolved" "https://registry.npmjs.org/uuid/-/uuid-3.4.0.tgz"
+  "version" "3.4.0"
 
 "uuid@^8.3.2":
   "integrity" "sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg=="

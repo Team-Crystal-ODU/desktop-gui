@@ -43,6 +43,7 @@
     "@testing-library/react": "^13.4.0",
     "concurrently": "^7.6.0",
     "cross-env": "^7.0.3",
+    "electron-reload": "^2.0.0-alpha.1",
     "react-docgen": "^5.4.3",
     "react-test-renderer": "^18.2.0",
     "wait-on": "^7.0.1"

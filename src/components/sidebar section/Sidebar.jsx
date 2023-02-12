@@ -24,7 +24,7 @@ const Sidebar = () => {
                 </h3>
                 <ul className="menuLists grid">
                     <li className="listItem">
-                        <a href="#" className="menuLink flex">
+                        <a href="/#" className="menuLink flex">
                             <IoMdSpeedometer className="icon" />
                             <span className="smallText">
                                 Readout
@@ -33,7 +33,7 @@ const Sidebar = () => {
                     </li>
 
                     <li className="listItem">
-                        <a href="#" className="menuLink flex">
+                        <a href="/#" className="menuLink flex">
                             <TfiWorld className="icon" />
                             <span className="smallText">
                                 Driven Equivalent
@@ -42,10 +42,26 @@ const Sidebar = () => {
                     </li>
 
                     <li className="listItem">
-                        <a href="#" className="menuLink flex">
+                        <a href="/#" className="menuLink flex">
                             <TfiWorld className="icon" />
                             <span className="smallText">
                                 Efficiency Score
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div className="newsDiv">
+                <h3 className="divTitle">
+                    NEWS
+                </h3>
+                <ul className="menuLists grid">
+                    <li className="listItem">
+                        <a href="/#" className="menuLink flex">
+                            <TfiWorld className="icon" />
+                            <span className="smallText">
+                                Eco-News
                             </span>
                         </a>
                     </li>
@@ -58,7 +74,7 @@ const Sidebar = () => {
                 </h3>
                 <ul className="menuLists grid">
                     <li className="listItem">
-                        <a href="#" className="menuLink flex">
+                        <a href="/#" className="menuLink flex">
                             <IoMdSpeedometer className="icon" />
                             <span className="smallText">
                                 Dashboard
@@ -67,7 +83,7 @@ const Sidebar = () => {
                     </li>
 
                     <li className="listItem">
-                        <a href="#" className="menuLink flex">
+                        <a href="/#" className="menuLink flex">
                             <TfiWorld className="icon" />
                             <span className="smallText">
                                 Consumption Overview
@@ -76,7 +92,7 @@ const Sidebar = () => {
                     </li>
 
                     <li className="listItem">
-                        <a href="#" className="menuLink flex">
+                        <a href="/#" className="menuLink flex">
                             <TfiWorld className="icon" />
                             <span className="smallText">
                                 Goals
@@ -85,7 +101,7 @@ const Sidebar = () => {
                     </li>
 
                     <li className="listItem">
-                        <a href="#" className="menuLink flex">
+                        <a href="/#" className="menuLink flex">
                             <TfiWorld className="icon" />
                             <span className="smallText">
                                 Achievements

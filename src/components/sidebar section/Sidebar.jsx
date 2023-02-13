@@ -1,6 +1,6 @@
 import React from "react";
 import './sidebar.css';
-
+import News from "../news section/News";
 // Imported Images ==============>
 import logo from '../../Assets/logo.png';
 
@@ -58,11 +58,12 @@ const Sidebar = () => {
                 </h3>
                 <ul className="menuLists grid">
                     <li className="listItem">
-                        <a href="/#" className="menuLink flex">
+                        <a href= "/News" className="menuLink flex">
                             <TfiWorld className="icon" />
                             <span className="smallText">
                                 Eco-News
                             </span>
+
                         </a>
                     </li>
                 </ul>

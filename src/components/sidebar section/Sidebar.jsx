@@ -51,7 +51,7 @@ const Sidebar = () => {
                     </li>
                 </ul>
             </div>
-
+{/* This is the tab for the Eco news, please update the necessary fonts and spacing */}
             <div className="newsDiv">
                 <h3 className="divTitle">
                     NEWS

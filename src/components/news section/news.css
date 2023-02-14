@@ -30,6 +30,12 @@
     text-align: auto;
     border-bottom: 1px solid white;
   }
+ 
+  img {
+    width: 400px;
+    height: 250px;
+ }
+
   .news__url {
     text-align: center;
     font-size: 10px;

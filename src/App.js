@@ -8,10 +8,9 @@ function App() {
     <div data-testid="test-1" className="container">
         <Sidebar />
         <Body />
-        
-
     </div>
   );
 }
 
 export default App;
+

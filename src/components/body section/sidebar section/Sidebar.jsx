@@ -1,10 +1,11 @@
 import React from "react";
 import './sidebar.css';
 //import News from "../news section/News";
-import { Link } from 'react-router-dom'
+//import News from "../news section/News";
 
 // Imported Images ==============>
-import logo from '../../Assets/logo.png';
+//import logo from '../../Assets/logo.png';
+import logo from '../../../Assets/logo.png';
 
 // Imported icons ===============>
 import {IoMdSpeedometer} from 'react-icons/io';
@@ -54,20 +55,19 @@ const Sidebar = () => {
                 </ul>
             </div>
 {/* This is the tab for the Eco news, please update the necessary fonts and spacing */}
-            <div className="menuDiv">
+            <div className="newsDiv">
                 <h3 className="divTitle">
                     NEWS
                 </h3>
                 <ul className="menuLists grid">
                     <li className="listItem">
-                        {/* <a href=/News className="menuLink flex"> */}
-                        <Link to ='\News' className="menuLink flex">
+                        <a href= "/News" className="menuLink flex">
                             <TfiWorld className="icon" />
                             <span className="smallText">
-                              <a href="/News.js">Eco-News</a>  
+                                Eco-News
                             </span>
-                        </Link>
-                        {/* </a> */}
+
+                        </a>
                     </li>
                 </ul>
             </div>

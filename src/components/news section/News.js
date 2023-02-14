@@ -4,7 +4,7 @@ import { NewsContextProvider } from "./NewsContext";
 import Ns from "./components/Ns";
 import "./news.css";
 
-function News() {
+const News = () => {
   return (
     <NewsContextProvider>
       <Ns />

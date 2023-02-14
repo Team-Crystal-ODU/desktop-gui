@@ -31,7 +31,7 @@
     border-bottom: 1px solid white;
   }
  
-  img {
+  .news__images {
     width: 400px;
     height: 250px;
  }

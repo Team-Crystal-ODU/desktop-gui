@@ -2,9 +2,24 @@
 const path = require('path');
 
 const { app, BrowserWindow } = require('electron');
+const { ConnectionBuilder } = require('electron-cgi');
 const isDev = require('electron-is-dev');
 
 function createWindow() {
+
+  let connection = new ConnectionBuilder()
+    .connectTo('dotnet', 'run', '--project', '../ElectronCgiDotNetDemo')
+    .build();
+
+  connection.onDisconnect = () => {
+    console.log('Connection between node and .net lost');
+  };
+
+  connection.send('greeting', 'Ashley', response => {
+    console.log(response);
+    connection.close();
+  });
+
   // Create the browser window.
   const win = new BrowserWindow({
     width: 800,

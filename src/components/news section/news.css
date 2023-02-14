@@ -25,11 +25,16 @@
     border-radius: 5px;
   }
   
-  .news__title {
+  .news__title{
     padding-bottom: 10px;
+    text-align: auto;
     border-bottom: 1px solid white;
   }
-  
+  .news__url {
+    text-align: center;
+    font-size: 10px;
+  }
+
   .head__text {
     margin-top: 30px;
     text-align: center;
@@ -60,3 +65,4 @@
     margin-top: 10px;
     color: rgb(122, 122, 122);
   }
+

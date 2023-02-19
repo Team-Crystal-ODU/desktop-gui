@@ -6,7 +6,7 @@
   --whiteColor: hsl(0, 0%, 100%);
   --blackColor: hsl(0, 0%, 18%);
   --textColor: hsl(240, 1%, 48%);
-  --bgColor: #003442;
+  --bgColor: hsl(193,100%,13%);
   --greyText: rgb(190, 190, 190);
   --inputColor: hsl(330, 12%, 97%);
   --greenColor: hsl(184,100%,16%);
@@ -21,69 +21,68 @@
 }
 
 .listingSection {
-  flex-basis: 70%;
+  margin-top: 5rem;
 }
-.listingSection .rankSection {
+.listingSection .rank {
   margin: auto;
   margin-top: 3rem;
+  margin-bottom: 6rem;
   width: 100%;
 }
-.listingSection .rankSection .innerRank {
-  height: 20px;
+.listingSection .rank .innerRank {
+  height: 15px;
   width: 350px;
   background: var(--whiteColor);
   border-radius: 100px;
   margin: auto;
-  /*justify-content: center;
-  position: relative;
-  align-items: flex-start;
-  flex-basis: 70%;
-  flex-direction: column;*/
   overflow: hidden;
 }
-.listingSection .secContainer {
-  width: 100%;
-  margin: 8rem 0;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.listingSection .overviewSection {
+  justify-content: space-between;
 }
-.listingSection .secContainer .secTitle {
+.listingSection .overviewSection .leftOverview .title {
   color: var(--whiteColor);
   margin: 1rem;
   font-weight: 600;
 }
-.listingSection .secContainer .singleItem {
+.listingSection .overviewSection .leftOverview .singleItem {
   position: relative;
   height: 10px;
-  width: 250px;
+  width: 280px;
   display: flex;
   align-items: center;
-  /*justify-content: center;
-  /*flex-direction: column;*/
   margin: 1rem;
   padding: 2rem;
   border-radius: 25px;
   border: 3px solid var(--greenColor);
 }
-.listingSection .secContainer .singleItem .score {
+.listingSection .overviewSection .leftOverview .singleItem .score {
   color: var(--whiteColor);
   font-weight: 600;
-  padding: 0 5px;
+  padding: 0 15px;
 }
-.listingSection .secContainer .singleItem h3 {
+.listingSection .overviewSection .leftOverview .singleItem h3 {
   font-size: var(--h3FontSize);
   color: var(--brightGreen);
   padding: 3rem 0;
 }
-.listingSection .secContainer .singleItem .efficiencyScore {
-  color: var(--whiteColor);
-}
-.listingSection .secContainer .efficiency {
+.listingSection .overviewSection .leftOverview .efficiency {
   background: var(--greenColor);
 }
-.listingSection .ecosystem {
-  height: 10px;
+.listingSection .overviewSection .leftOverview .efficiency .efficiencyScore {
+  color: var(--whiteColor);
+}
+.listingSection .overviewSection .middleOverview {
+  padding: 2rem;
+  margin: 1rem 5rem;
+}
+.listingSection .overviewSection .middleOverview img {
   width: 250px;
+}
+.listingSection .overviewSection .rightOverview {
+  gap: 1rem;
+}
+.listingSection .overviewSection .rightOverview img {
   margin: 1rem;
-  padding: 10px;
+  width: 400px;
 }/*# sourceMappingURL=listing.css.map */

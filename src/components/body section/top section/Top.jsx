@@ -7,6 +7,7 @@ import {TbMessageCircle} from 'react-icons/tb';
 import {MdOutlineNotificationsNone} from 'react-icons/md';
 
 // Imported Images ==================>
+import logo from '../../../Assets/logo.png';
 import img from '../../../Assets/user(2).jpg';
 
 const Top = () => {
@@ -14,7 +15,10 @@ const Top = () => {
         <div className="topSection">
             <div className="headerSection flex">
                 <div className="title">
-                    <h1>Welcome to World Space.</h1>
+                    <div className="logoDiv flex">
+                        <img src={logo} alt="World Space Logo" />
+                        <h1>Welcome to World Space.</h1>
+                    </div>
                     <p>Hello Simon, Welcome back!</p>
                 </div>
 

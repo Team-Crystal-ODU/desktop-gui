@@ -23,6 +23,13 @@
 .topSection .headerSection {
   justify-content: space-between;
 }
+.topSection .headerSection .title img {
+  max-width: 20px;
+  margin-right: 1rem;
+  background: var(--inputColor);
+  border-radius: 2px;
+  padding: 0.2rem;
+}
 .topSection .headerSection .title h1 {
   font-size: var(--h1FontSize);
   color: var(--whiteColor);
@@ -30,8 +37,9 @@
 }
 .topSection .headerSection .title p {
   font-size: var(--normalFontSize);
-  color: var(--textColor);
+  color: var(--brightGreen);
   font-weight: 500;
+  margin-left: 2.5rem;
 }
 .topSection .headerSection .searchBar {
   padding: 1rem 2rem;

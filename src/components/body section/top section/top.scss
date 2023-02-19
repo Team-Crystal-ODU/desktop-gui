@@ -26,6 +26,14 @@
         justify-content:  space-between;
 
         .title {
+            img {
+                max-width: 20px;
+                margin-right: 1rem;
+                background: var(--inputColor);
+                border-radius: 2px;
+                padding: .2rem;
+            }
+
             h1 {
                 font-size: var(--h1FontSize);
                 color: var(--whiteColor);
@@ -34,8 +42,9 @@
     
             p {
                 font-size: var(--normalFontSize);
-                color: var(--textColor);
+                color: var(--brightGreen);
                 font-weight: 500;
+                margin-left: 2.5rem;
             }
         }
 

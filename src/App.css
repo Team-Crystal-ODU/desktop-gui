@@ -17,7 +17,7 @@
   --whiteColor: hsl(0, 0%, 100%);
   --blackColor: hsl(0, 0%, 18%);
   --textColor: hsl(240, 1%, 48%);
-  --bgColor: #003442;
+  --bgColor: hsl(193,100%,13%);
   --greyText: rgb(190, 190, 190);
   --inputColor: hsl(330, 12%, 97%);
 

@@ -1,9 +1,9 @@
 import React from "react";
 import './body.css';
 import Top from './top section/Top';
-import Listing from './listing section/Listing';
 import Activity from './activity section/Activity';
-import News from "../news section/News";
+import Listing from './listing section/Listing';
+import RssFeed from "./rssFeed section/RssFeed";
 
 const Body = () => {
     return (
@@ -13,8 +13,7 @@ const Body = () => {
             <div className="bottom">
                 <Listing />
                 <Activity />
-                {/*<News />*/}
-                <a href="/news">News Page</a>
+                <RssFeed />
             </div>
         </div>
     );

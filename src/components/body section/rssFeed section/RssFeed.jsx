@@ -6,7 +6,7 @@ const RssFeed = () => {
     return (
         <div className="rssFeedSection">
             <div className="title">
-                <a href="/news">News Page (click me)</a>
+                <a href="/news">Eco News (click me)</a>
             </div>
         </div>
     );

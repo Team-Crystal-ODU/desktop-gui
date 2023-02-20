@@ -10,10 +10,11 @@ const Body = () => {
         <div className="mainContent">
             <Top />
 
-            <div className="bottom flex">
+            <div className="bottom">
                 <Listing />
                 <Activity />
-                <News />
+                {/*<News />*/}
+                <a href="/news">News Page</a>
             </div>
         </div>
     );

@@ -3,7 +3,7 @@ import './activity.css';
 
 const Activity = () => {
     return (
-        <div>Activity</div>
+        <div>Goals</div>
     );
 }
 

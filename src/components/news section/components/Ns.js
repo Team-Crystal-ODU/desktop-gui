@@ -8,7 +8,10 @@ function Ns(props) {
 
   return (
     <div>
-      <h1 className="head__text">Eco News</h1>
+      <div className="head__text">
+        <h1>Eco News</h1>
+        <a href="/">Return to Home</a>
+      </div>
       <div className="all__news">
         {data
           ? data.articles.map((news) => (

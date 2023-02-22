@@ -46,7 +46,10 @@
     text-align: center;
     -webkit-text-size-adjust: auto;
     color: white;
-    
+  }
+
+  a {
+    color: white;
   }
   
   .news__desc {

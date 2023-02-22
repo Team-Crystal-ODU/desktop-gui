@@ -33,8 +33,10 @@ const Listing = () => {
                     </div>
                 </div>
 
-                <div className="middleOverview flex">
-                    <img src={img} alt="Image Title" /> 
+                <div className="middleOverview">
+                    <div className="title">Ecosystem Health</div>
+                    <img src={img} alt="Image Title" />
+                    <p>355 PPM</p> 
                 </div>
 
                 <div className="rightOverview flex">

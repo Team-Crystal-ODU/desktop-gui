@@ -43,6 +43,7 @@
 .listingSection .overviewSection .leftOverview .title {
   color: var(--whiteColor);
   margin: 1rem;
+  margin-bottom: 2rem;
   font-weight: 600;
 }
 .listingSection .overviewSection .leftOverview .singleItem {
@@ -75,9 +76,19 @@
 .listingSection .overviewSection .middleOverview {
   padding: 2rem;
   margin: 1rem 5rem;
+  text-align: center;
+  color: var(--whiteColor);
+}
+.listingSection .overviewSection .middleOverview .title {
+  margin: 1rem;
+  font-weight: 600;
 }
 .listingSection .overviewSection .middleOverview img {
-  width: 250px;
+  width: 230px;
+}
+.listingSection .overviewSection .middleOverview p {
+  font-weight: 800;
+  margin-top: 2rem;
 }
 .listingSection .overviewSection .rightOverview {
   gap: 1rem;

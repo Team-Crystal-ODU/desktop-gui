@@ -1,0 +1,88 @@
+:root {
+  --PrimaryColor: #4a717b;
+  --HoverColor: #bdf094;
+  --brightGreen: #00cb8d;
+  --paleGreen: hsl(192,40%,90%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --bgColor: hsl(193,100%,13%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  --greenColor: hsl(184,100%,16%);
+  /* Font and typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.achievementSection {
+  margin-top: 5rem;
+}
+.achievementSection .overviewSection {
+  justify-content: space-between;
+}
+.achievementSection .overviewSection .title {
+  color: var(--whiteColor);
+  margin: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+.achievementSection .overviewSection .leftOverview, .achievementSection .overviewSection .rightOverview {
+  flex-basis: 100%;
+}
+.achievementSection .overviewSection .leftOverview .singleItem1, .achievementSection .overviewSection .rightOverview .singleItem1 {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 20px;
+  border: 3px solid var(--paleGreen);
+  background-color: var(--paleGreen);
+}
+.achievementSection .overviewSection .leftOverview .singleItem1 h3, .achievementSection .overviewSection .rightOverview .singleItem1 h3 {
+  font-size: var(--h3FontSize);
+  color: var(--blackColor);
+  padding: 3rem 0;
+}
+.achievementSection .overviewSection .leftOverview .singleItem2, .achievementSection .overviewSection .rightOverview .singleItem2 {
+  position: relative;
+  height: 300px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 20px;
+  border: 3px solid var(--paleGreen);
+  background-color: var(--paleGreen);
+}
+.achievementSection .overviewSection .leftOverview .singleItem2 h3, .achievementSection .overviewSection .rightOverview .singleItem2 h3 {
+  font-size: var(--h3FontSize);
+  color: var(--blackColor);
+  padding: 3rem 0;
+}
+.achievementSection .overviewSection .leftOverview .singleItem3, .achievementSection .overviewSection .rightOverview .singleItem3 {
+  position: relative;
+  height: 300px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 20px;
+  border: 3px solid var(--paleGreen);
+  background-color: var(--paleGreen);
+}
+.achievementSection .overviewSection .leftOverview .singleItem3 h3, .achievementSection .overviewSection .rightOverview .singleItem3 h3 {
+  font-size: var(--h3FontSize);
+  color: var(--blackColor);
+  padding: 3rem 0;
+}/*# sourceMappingURL=achievement.css.map */

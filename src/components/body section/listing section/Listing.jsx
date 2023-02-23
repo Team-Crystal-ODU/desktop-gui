@@ -42,7 +42,6 @@ const Listing = () => {
                 <div className="rightOverview flex">
                     <img src={img2} alt="Image Title" />
                 </div>
-
             </div>
         </div>
     );

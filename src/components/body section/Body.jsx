@@ -4,7 +4,7 @@ import Top from './top section/Top';
 import Activity from './activity section/Activity';
 import Achievement from './achievement section/Achievement';
 import Listing from './listing section/Listing';
-import RssFeed from "./rssFeed section/RssFeed";
+import RssFeed from './rssFeed section/RssFeed';
 
 const Body = () => {
     return (

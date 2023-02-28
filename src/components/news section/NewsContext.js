@@ -9,8 +9,8 @@ export const NewsContextProvider = (props) => {
   useEffect(() => {
     axios
       .get(
-       'https://newsapi.org/v2/everything?q=climatechange&from=2023-01-15&sortBy=publishedAt&apiKey=f9b6d5aa96554959bc424f1f49eda0e0' //8b3857ce9ec64963a71559484c640e1b'
-      )
+        'https://newsapi.org/v2/everything?q=climatechange&from=2023-01-15&sortBy=publishedAt&apiKey=f9b6d5aa96554959bc424f1f49eda0e0' //8b3857ce9ec64963a71559484c640e1b'
+       )
       .then((response) => setData(response.data))
       .catch((error) => console.log(error));
   }, []);

@@ -1,6 +1,7 @@
 .auth-form-container .login-form, .auth-form-container .register-form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 .auth-form-container .login-form label, .auth-form-container .register-form label {
   text-align: left;

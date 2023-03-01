@@ -2,6 +2,7 @@
    .login-form, .register-form {
       display: flex;
       flex-direction: column;
+      margin-bottom: 2rem;
 
       label {
         text-align: left;

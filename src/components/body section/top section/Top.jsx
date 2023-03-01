@@ -33,6 +33,7 @@ const Top = () => {
                     <div className="adminImage">
                         <img src={img} alt="Admin Image" />
                     </div>
+                    <a href="/">Logout</a>
                 </div>
             </div>
         </div>

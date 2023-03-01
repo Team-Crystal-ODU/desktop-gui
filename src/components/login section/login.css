@@ -1,0 +1,36 @@
+.auth-form-container .login-form, .auth-form-container .register-form {
+  display: flex;
+  flex-direction: column;
+}
+.auth-form-container .login-form label, .auth-form-container .register-form label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+.auth-form-container .login-form input, .auth-form-container .register-form input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+.auth-form-container .login-form button, .auth-form-container .register-form button {
+  border: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #7439db;
+}
+.auth-form-container .link-btn {
+  background: none;
+  color: white;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}/*# sourceMappingURL=login.css.map */

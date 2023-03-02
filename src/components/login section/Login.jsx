@@ -10,6 +10,14 @@ export const Login = (props) => {
     const [errMsg, setErrMsg] = useState('');
     const [success, setSuccess] = useState(false);
 
+    //useEffect(() => {
+    //    emailRef.current.focus();
+    //}, [])
+
+    useEffect(() => {
+        setErrMsg('');
+    }, [email, pwd])
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log(email, pwd);
@@ -25,7 +33,7 @@ export const Login = (props) => {
                     <h1>You are logged in!</h1>
                     <br />
                     <p>
-                        <a href="/home">Go to Home</a>
+                        <a href="/">Go to Home</a>
                     </p>
                 </section>
             ) : (

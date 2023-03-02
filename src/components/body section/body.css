@@ -1,11 +1,13 @@
 .mainContent {
-  width: 82%;
+  /*width: 82%;*/
+  width: 100%;
   height: 100%;
-  padding: 2rem;
   overflow: auto;
 }
 .mainContent .bottom {
+  width: 82%;
+  margin: auto;
   margin-top: 2rem;
   gap: 2rem;
-  align-items: flex-start;
+  /*align-items: flex-start;*/
 }/*# sourceMappingURL=body.css.map */

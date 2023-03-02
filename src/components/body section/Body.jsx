@@ -10,7 +10,6 @@ const Body = () => {
     return (
         <div className="mainContent">
             <Top />
-
             <div className="bottom">
                 <Listing />
                 <Activity />

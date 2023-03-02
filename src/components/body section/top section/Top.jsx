@@ -2,13 +2,13 @@ import React from "react";
 import './top.css';
 
 // Imported Icons ==================>
-import {BiSearchAlt} from 'react-icons/bi';
+import {HiOutlineSearch} from 'react-icons/hi';
 import {TbMessageCircle} from 'react-icons/tb';
 import {MdOutlineNotificationsNone} from 'react-icons/md';
 
 // Imported Images ==================>
 import logo from '../../../Assets/logo.png';
-import img from '../../../Assets/user(2).jpg';
+import img from '../../../Assets/user.jpeg';
 
 const Top = () => {
     return (
@@ -17,23 +17,23 @@ const Top = () => {
                 <div className="title">
                     <div className="logoDiv flex">
                         <img src={logo} alt="World Space Logo" />
-                        <h1>Welcome to World Space.</h1>
+                        <h1>World Space.</h1>
                     </div>
-                    <p>Hello Simon, Welcome back!</p>
+                    {/*<p>Hello Simon, Welcome back!</p>*/}
                 </div>
 
                 <div className="searchBar flex">
-                    <input type="text" placeholder="Search Dashboard" />
-                    <BiSearchAlt className="icon"/>
+                    <input type="text" placeholder="Search Dashboard..." />
+                    <HiOutlineSearch className="icon"/>
                 </div>
 
                 <div className="adminDiv flex">
-                    <TbMessageCircle className="icon" />
                     <MdOutlineNotificationsNone className="icon" />
                     <div className="adminImage">
                         <img src={img} alt="Admin Image" />
                     </div>
-                    <a href="/">Logout</a>
+                    <p>Hi, Stacey</p>
+                    {/*<a href="/login">Logout</a>*/}
                 </div>
             </div>
         </div>

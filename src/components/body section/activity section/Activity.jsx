@@ -24,7 +24,7 @@ const Activity = () => {
                 </div>
 
                 <div className="rightOverview">
-                    <div className="title">In-Game Items Showcase</div>
+                    <div className="title">Recently Played</div>
                     <div className="rightCard">
                         <div className="itemScroll">
                             <img src={img} alt="Image Title" />

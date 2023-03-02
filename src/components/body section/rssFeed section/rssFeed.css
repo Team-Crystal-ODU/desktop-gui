@@ -21,10 +21,65 @@
 }
 
 .rssFeedSection {
-  margin-top: 1rem;
+  margin-top: 5rem;
 }
-.rssFeedSection .title a {
+.rssFeedSection .overviewSection {
+  justify-content: space-between;
+}
+.rssFeedSection .overviewSection a {
   color: var(--whiteColor);
-  margin-top: 1rem;
+  margin: 1rem;
+  margin-bottom: 2rem;
   font-weight: 600;
+}
+.rssFeedSection .overviewSection .leftOverview, .rssFeedSection .overviewSection .rightOverview {
+  flex-basis: 100%;
+}
+.rssFeedSection .overviewSection .leftOverview .singleItem1, .rssFeedSection .overviewSection .rightOverview .singleItem1 {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: var(--PrimaryColor);
+}
+.rssFeedSection .overviewSection .leftOverview .singleItem1 h3, .rssFeedSection .overviewSection .rightOverview .singleItem1 h3 {
+  font-size: var(--h3FontSize);
+  color: var(--blackColor);
+  padding: 3rem 0;
+}
+.rssFeedSection .overviewSection .leftOverview .singleItem2, .rssFeedSection .overviewSection .rightOverview .singleItem2 {
+  position: relative;
+  height: 300px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: var(--PrimaryColor);
+}
+.rssFeedSection .overviewSection .leftOverview .singleItem2 h3, .rssFeedSection .overviewSection .rightOverview .singleItem2 h3 {
+  font-size: var(--h3FontSize);
+  color: var(--blackColor);
+  padding: 3rem 0;
+}
+.rssFeedSection .overviewSection .leftOverview .singleItem3, .rssFeedSection .overviewSection .rightOverview .singleItem3 {
+  position: relative;
+  height: 300px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: var(--PrimaryColor);
+}
+.rssFeedSection .overviewSection .leftOverview .singleItem3 h3, .rssFeedSection .overviewSection .rightOverview .singleItem3 h3 {
+  font-size: var(--h3FontSize);
+  color: var(--blackColor);
+  padding: 3rem 0;
 }/*# sourceMappingURL=rssFeed.css.map */

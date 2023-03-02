@@ -13,7 +13,7 @@ const Body = () => {
             <div className="bottom">
                 <Listing />
                 <Activity />
-                <Achievement />
+                {/*<Achievement />*/}
                 <RssFeed />
             </div>
         </div>

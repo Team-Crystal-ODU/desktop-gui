@@ -22,11 +22,73 @@
 }
 
 .rssFeedSection {
-    margin-top: 1rem;
-    
-    .title a {
-        color: var(--whiteColor);
-        margin-top: 1rem;
-        font-weight: 600;
+    margin-top: 5rem;
+    .overviewSection {
+        justify-content: space-between;
+        
+        a {
+            color: var(--whiteColor);
+            margin: 1rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .leftOverview, .rightOverview {
+            flex-basis: 100%;
+            .singleItem1 {
+                position: relative;
+                height: 300px;
+                width: 300px;
+                display: flex;
+                align-items: center;
+                margin: 1rem;
+                padding: 2rem;
+                border-radius: 20px;
+               
+                background-color: var(--PrimaryColor);
+
+                h3 {
+                    font-size: var(--h3FontSize);
+                    color: var(--blackColor);
+                    padding: 3rem 0;
+                }
+            }
+
+            .singleItem2 {
+                position: relative;
+                height: 300px;
+                width: 150px;
+                display: flex;
+                align-items: center;
+                margin: 1rem;
+                padding: 2rem;
+                border-radius: 20px;
+                background-color: var(--PrimaryColor);
+
+                h3 {
+                    font-size: var(--h3FontSize);
+                    color: var(--blackColor);
+                    padding: 3rem 0;
+                }
+            }
+
+            .singleItem3 {
+                position: relative;
+                height: 300px;
+                width: 200px;
+                display: flex;
+                align-items: center;
+                margin: 1rem;
+                padding: 2rem;
+                border-radius: 20px;
+                background-color: var(--PrimaryColor);
+
+                h3 {
+                    font-size: var(--h3FontSize);
+                    color: var(--blackColor);
+                    padding: 3rem 0;
+                }
+            }
+        }
     }
 }

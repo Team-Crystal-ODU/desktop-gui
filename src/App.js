@@ -12,9 +12,9 @@ function App() {
     <div data-testid="test-1" className="container">
       <Routes>
         {/*<Sidebar />*/}
-        <Route path='/' element={<Login />} />
+        <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
-        <Route path='/home' element={<Body />} />
+        <Route path='/' element={<Body />} />
         <Route path='/news' element={<News />} />
       </Routes>
     </div>

@@ -1,13 +1,13 @@
 import React from "react";
-import './listing.css';
+import './hero.css';
 
 // Imported Images ============>
 import img from '../../../Assets/globe(1).png';
 import img2 from '../../../Assets/graph.png';
 
-const Listing = () => {
+const Hero = () => {
     return (
-        <div className="listingSection">
+        <div className="heroSection">
             
             <div className="rank">
                 <div className="innerRank"></div>
@@ -47,4 +47,4 @@ const Listing = () => {
     );
 }
 
-export default Listing;
+export default Hero;

@@ -5,7 +5,7 @@ import './body.css';
 import Top from './top section/Top';
 import Activity from './activity section/Activity';
 import Achievement from './achievement section/Achievement';
-import Listing from './listing section/Listing';
+import Hero from './hero section/Hero';
 import RssFeed from './rssFeed section/RssFeed';
 
 
@@ -37,7 +37,7 @@ const Body = () => {
         <div className="mainContent">
             <Top />
             <div className="bottom">
-                <Listing />
+                <Hero />
                 <Activity />
                 {/*<Achievement />*/}
                 {articles.map((item, i) =>

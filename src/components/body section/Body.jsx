@@ -4,7 +4,6 @@ import React from "react";
 import './body.css';
 import Top from './top section/Top';
 import Activity from './activity section/Activity';
-import Achievement from './achievement section/Achievement';
 import Hero from './hero section/Hero';
 import RssFeed from './rssFeed section/RssFeed';
 
@@ -39,7 +38,6 @@ const Body = () => {
             <div className="bottom">
                 <Hero />
                 <Activity />
-                {/*<Achievement />*/}
                 {articles.map((item, i) =>
                 <RssFeed 
                     key={i}

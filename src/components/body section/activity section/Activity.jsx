@@ -3,6 +3,8 @@ import './activity.css';
 
 // Imported Images ============>
 import img from '../../../Assets/logo.png';
+import img1 from '../../../Assets/callOfDuty.png';
+import img2 from '../../../Assets/fortNite.png';
 
 const Activity = () => {
     return (
@@ -27,8 +29,8 @@ const Activity = () => {
                     <div className="title">Recently Played</div>
                     <div className="rightCard">
                         <div className="itemScroll">
-                            <img src={img} alt="Image Title" />
-                            <img src={img} alt="Image Title" />
+                            <img src={img1} alt="Image Title" />
+                            <img src={img2} alt="Image Title" />
                             <img src={img} alt="Image Title" />
                             <img src={img} alt="Image Title" />
                         </div>

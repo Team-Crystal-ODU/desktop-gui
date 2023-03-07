@@ -15,8 +15,6 @@ import { useEffect, useState } from "react";
 const Body = () => {
     const [articles, setArticles] = useState([]);
 
-    console.log(articles);
-
     const getArticles = async () => {
         try {
         const res = await axios.get("http://localhost:4000/")
@@ -30,21 +28,22 @@ const Body = () => {
         getArticles();
     }, [])
 
-    console.log(articles);
-
     return (
         <div className="mainContent">
             <Top />
             <div className="bottom">
                 <Hero />
                 <Activity />
-                {articles.map((item, i) =>
-                <RssFeed 
-                    key={i}
-                    title={item.item.title}
-                    date={item.item.pubDate}
-                />
-        )} 
+                <a classname="newsTitle" href="/news">Eco News</a>
+                <div className="newsBlock flex">
+                    {articles.map((item, i) =>
+                        <RssFeed 
+                            key={i}
+                            title={item.item.title}
+                            date={item.item.pubDate}
+                        />
+                    )}
+                </div> 
             </div>
         </div>
     );

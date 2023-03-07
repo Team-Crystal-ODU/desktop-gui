@@ -2,7 +2,6 @@ import React from "react";
 import './rssFeed.css';
 
 
-
 const RssFeed = ({ title, date }) => {
     return (
         <div className="rssFeedSection">

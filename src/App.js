@@ -1,5 +1,4 @@
 import './App.css';
-//import Sidebar from './components/sidebar section/Sidebar';
 import Body from './components/body section/Body';
 import News from './components/news section/News';
 import Login from './components/login section/Login';
@@ -13,7 +12,6 @@ function App() {
   return (
     <div data-testid="test-1" className="container">
       <Routes>
-        {/*<Sidebar />*/}
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/' element={<Body />} />

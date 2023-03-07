@@ -1,9 +1,7 @@
 // ./public/electron.js
 const path = require('path');
-
-const { app, BrowserWindow } = require('electron');
-;
 const isDev = require('electron-is-dev');
+const { app, BrowserWindow } = require('electron');
 
 function createWindow() {
   // Create the browser window.

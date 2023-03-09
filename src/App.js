@@ -5,6 +5,7 @@ import Login from './components/login section/Login';
 import Register from "./components/login section/Register";
 
 import { Routes, Route } from 'react-router-dom';
+import RssFeed from './components/body section/rssFeed section/RssFeed';
 
 
 
@@ -15,7 +16,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/' element={<Body />} />
-        <Route path='/news' element={<News />} />
+        <Route path='/news' element={<RssFeed />} />
       </Routes>
     </div>
   );

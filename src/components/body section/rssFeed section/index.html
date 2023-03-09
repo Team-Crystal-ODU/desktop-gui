@@ -1,0 +1,28 @@
+<!-- Author Jafar Husaini Aziz
+feel free to copy
+full project on https://github.com/jfrAziz/RSS-news -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RSS NEWS</title>
+    <script type="text/javascript" src="script/xmltojson.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="info">
+      This news 
+      <span id="xml-info" class="info active">loaded from xml data</span>
+      <span id="json-info" class="info">loaded from json converted from xml data</span>
+    </div>
+    
+    <button id="xml-btn"  class="btn active">Load From XML</button>
+    <button id="json-btn" class="btn">Load From JSON</button>
+	
+    <!--rooot element sebagai container dari semua berita yang akan diisi dari index.js-->
+    <div id="root"></div>
+    <script src="script/index.js"></script>
+  </body>
+</html>

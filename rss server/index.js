@@ -3,6 +3,7 @@ import express from "express";
 import RSSParser from "rss-parser";
 
 const feedURL = "https://yaleclimateconnections.org/feed/";
+const feedURL2 = "https://rss2.feedspot.com/https://www.climatelinks.org/blog?context=3710842201";
 const parser = new RSSParser();
 let articles = [];
 
@@ -14,7 +15,7 @@ const parse = async url => {
     })
 }
 
-parse(feedURL);
+parse(feedURL, feedURL2);
 
 let app = express();
 app.use(cors());

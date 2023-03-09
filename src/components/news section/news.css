@@ -17,7 +17,8 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
   }
-  
+
+  .borders,
   .news {
     max-width: 500px;
     padding: 30px;
@@ -25,10 +26,13 @@
     border-radius: 5px;
   }
   
+  .feedTitle,
   .news__title{
     padding-bottom: 10px;
     text-align: auto;
     border-bottom: 1px solid white;
+    font: normal;
+
   }
  
   .news__images {
@@ -46,6 +50,7 @@
     text-align: center;
     -webkit-text-size-adjust: auto;
     color: white;
+    margin-bottom: 30px;
   }
 
   a {
@@ -73,5 +78,14 @@
     display: inline-block;
     margin-top: 10px;
     color: rgb(122, 122, 122);
+  }
+
+  .pics {
+    background:none;
+    flex: auto;
+    align-items: center;
+    border-radius: 30px;
+    width: 430px;
+    height: 160px;
   }
 

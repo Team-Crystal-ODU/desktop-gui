@@ -36,13 +36,6 @@ const Body = () => {
                 <Activity />
                 <a classname="newsTitle" href="/news">Eco News</a>
                 <div className="newsBlock flex">
-                    {articles.map((item, i) =>
-                        <RssFeed 
-                            key={i}
-                            title={item.item.title}
-                            date={item.item.pubDate}
-                        />
-                    )}
                 </div> 
             </div>
         </div>

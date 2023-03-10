@@ -3,7 +3,6 @@ import './top.css';
 
 // Imported Icons ==================>
 import {HiOutlineSearch} from 'react-icons/hi';
-import {TbMessageCircle} from 'react-icons/tb';
 import {MdOutlineNotificationsNone} from 'react-icons/md';
 
 // Imported Images ==================>
@@ -30,7 +29,7 @@ const Top = () => {
                 <div className="adminDiv flex">
                     <MdOutlineNotificationsNone className="icon" />
                     <div className="adminImage">
-                        <img src={img} alt="Admin Image" />
+                        <img src={img} alt="" />
                     </div>
                     <p>Hi, Stacey</p>
                     {/*<a href="/login">Logout</a>*/}

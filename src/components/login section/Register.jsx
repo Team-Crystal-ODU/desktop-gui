@@ -1,13 +1,13 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 
 export const Register = (props) => {
     const [email, setEmail] = useState('');
     const [pwd, setPwd] = useState('');
     const [name, setName] = useState('');
 
-    const emailRef = useRef();
-    const errRef = useRef();
-    const [errMsg, setErrMsg] = useState('');
+    //const emailRef = useRef();
+    //const errRef = useRef();
+    //const [errMsg, setErrMsg] = useState('');
     const [success, setSuccess] = useState(false);
 
     const handleSubmit = async (e) => {

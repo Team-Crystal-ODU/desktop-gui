@@ -30,10 +30,10 @@ const Activity = () => {
                     <div className="title">Recently Played</div>
                     <div className="rightCard">
                         <div className="itemScroll">
-                            <img src={img} alt="Image Title" />
-                            <img src={img1} alt="Image Title" />
-                            <img src={img2} alt="Image Title" />
-                            <img src={img3} alt="Image Title" />
+                            <img src={img} alt="" />
+                            <img src={img1} alt="" />
+                            <img src={img2} alt="" />
+                            <img src={img3} alt="" />
                         </div>
                     </div>
                 </div>

@@ -62,15 +62,20 @@
                 border: 3px solid var(--greenColor);
 
                 .score {
-                    color: var(--whiteColor);
+                    font-size: 20px;
                     font-weight: 600;
+                    color: var(--whiteColor);
                     padding: 0 15px;
                 }
 
                 h3 {
-                    font-size: var(--h3FontSize);
+                    font-size: var(--normalFontSize);
                     color: var(--brightGreen);
-                    padding: 3rem 0;
+                }
+
+                .units {
+                    font-size: var(--smallFontSize);
+                    color: var(--whiteColor);
                 }
             }
 

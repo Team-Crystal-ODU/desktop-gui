@@ -19,12 +19,18 @@ const Hero = () => {
                     <div className="title">Consumption Overview</div>
                     <div className="singleItem">
                         <span className="score">50</span>
-                        <h3>Readout</h3>
+                        <div>
+                            <h3>Readout</h3>
+                            <p className="units">lbs of CO<sub>2</sub></p>
+                        </div>
                     </div>
 
                     <div className="singleItem">
                         <span className="score">43</span>
-                        <h3>Driven Equivalent</h3>
+                        <div>
+                            <h3>Driven Equivalent</h3>
+                            <p className="units">miles driven</p>
+                        </div>
                     </div>
 
                     <div className="singleItem efficiency">

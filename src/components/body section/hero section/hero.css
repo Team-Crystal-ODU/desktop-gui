@@ -58,14 +58,18 @@
   border: 3px solid var(--greenColor);
 }
 .heroSection .overviewSection .leftOverview .singleItem .score {
-  color: var(--whiteColor);
+  font-size: 20px;
   font-weight: 600;
+  color: var(--whiteColor);
   padding: 0 15px;
 }
 .heroSection .overviewSection .leftOverview .singleItem h3 {
-  font-size: var(--h3FontSize);
+  font-size: var(--normalFontSize);
   color: var(--brightGreen);
-  padding: 3rem 0;
+}
+.heroSection .overviewSection .leftOverview .singleItem .units {
+  font-size: var(--smallFontSize);
+  color: var(--whiteColor);
 }
 .heroSection .overviewSection .leftOverview .efficiency {
   background: var(--greenColor);

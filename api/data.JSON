@@ -1,0 +1,18 @@
+{
+    "user_id": "AGH801035",
+    "date": "2023-03-09",
+    "samples": [
+        {
+            "timestamp": "12.59",
+            "value": "167"
+        },
+        {
+            "timestamp": "13.00",
+            "value": "200"
+        },
+        {
+            "timestamp": "13.01",
+            "value": "200"
+        }
+    ]
+}

@@ -10,10 +10,6 @@ export const Login = (props) => {
     const [errMsg, setErrMsg] = useState('');
     const [success, setSuccess] = useState(false);
 
-    //useEffect(() => {
-    //    emailRef.current.focus();
-    //}, [])
-
     useEffect(() => {
         setErrMsg('');
     }, [email, pwd])

@@ -5,6 +5,12 @@ import './hero.css';
 import img from '../../../Assets/globe(1).png';
 import img2 from '../../../Assets/graph.png';
 
+// Earth Imports ============>
+import styled from "styled-components";
+import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
+import { Earth } from "../earth section/Earth";
+
 const Hero = () => {
     return (
         <div className="heroSection">
@@ -41,7 +47,12 @@ const Hero = () => {
 
                 <div className="middleOverview">
                     <div className="title">Ecosystem Health</div>
-                    <img src={img} alt="Image Title" />
+                    {/*<img src={img} alt="Image Title" />*/}
+                    <Canvas>
+                        <Suspense fallback={null}>
+                            <Earth />
+                        </Suspense>
+                    </Canvas>
                     <p>355 PPM</p> 
                 </div>
 

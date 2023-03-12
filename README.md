@@ -1,5 +1,7 @@
 ## World Space GUI
 
+https://user-images.githubusercontent.com/76723573/224543399-aed24a0f-a327-4af1-9729-5cf5bc8ed284.mov
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -7,6 +9,7 @@ In the project directory, you can run:
 ### `npm run dev`
 
 Runs the app in the development mode.\
+
 Opens in native browser window
 
 ### `npm start`

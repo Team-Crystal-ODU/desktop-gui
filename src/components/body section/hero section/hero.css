@@ -39,6 +39,8 @@
 }
 .heroSection .overviewSection {
   justify-content: space-between;
+  width: 100%;
+  margin: auto;
 }
 .heroSection .overviewSection .leftOverview .title {
   color: var(--whiteColor);
@@ -93,11 +95,4 @@
 .heroSection .overviewSection .middleOverview p {
   font-weight: 800;
   margin-top: 2rem;
-}
-.heroSection .overviewSection .rightOverview {
-  gap: 1rem;
-}
-.heroSection .overviewSection .rightOverview img {
-  margin: 1rem;
-  width: 400px;
 }/*# sourceMappingURL=hero.css.map */

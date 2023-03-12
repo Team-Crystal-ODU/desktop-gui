@@ -48,11 +48,13 @@ const Hero = () => {
                 <div className="middleOverview">
                     <div className="title">Ecosystem Health</div>
                     {/*<img src={img} alt="Image Title" />*/}
-                    <Canvas>
-                        <Suspense fallback={null}>
-                            <Earth />
-                        </Suspense>
-                    </Canvas>
+                    <div className="earth">
+                        <Canvas>
+                            <Suspense fallback={null}>
+                                <Earth />
+                            </Suspense>
+                        </Canvas>
+                    </div>
                     <p>355 PPM</p> 
                 </div>
 

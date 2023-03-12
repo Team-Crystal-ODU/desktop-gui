@@ -91,32 +91,28 @@
         }
 
         .middleOverview {
-            padding: 2rem;
-            margin: 1rem 5rem;
+            padding: 1rem;
+            margin: 1rem;
             text-align: center;
             color: var(--whiteColor);
 
             .title {
-                margin: 1rem;
                 font-weight: 600;
             }
 
-            img {
-                width: 230px;
+            .earth {
+                height: 250px;
             }
 
             p {
                 font-weight: 800;
-                margin-top: 2rem;
+                margin-top: 1rem;
             }
         }
 
         .rightOverview {
-            //gap: 1rem;
-
             img {
-                //margin: 1rem;
-                //width: 400px;
+                width: 280px;
             }
         }
     }

@@ -80,19 +80,21 @@
   color: var(--whiteColor);
 }
 .heroSection .overviewSection .middleOverview {
-  padding: 2rem;
-  margin: 1rem 5rem;
+  padding: 1rem;
+  margin: 1rem;
   text-align: center;
   color: var(--whiteColor);
 }
 .heroSection .overviewSection .middleOverview .title {
-  margin: 1rem;
   font-weight: 600;
 }
-.heroSection .overviewSection .middleOverview img {
-  width: 230px;
+.heroSection .overviewSection .middleOverview .earth {
+  height: 250px;
 }
 .heroSection .overviewSection .middleOverview p {
   font-weight: 800;
-  margin-top: 2rem;
+  margin-top: 1rem;
+}
+.heroSection .overviewSection .rightOverview img {
+  width: 280px;
 }/*# sourceMappingURL=hero.css.map */

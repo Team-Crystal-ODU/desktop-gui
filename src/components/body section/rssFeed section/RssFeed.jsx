@@ -7,7 +7,6 @@ const RssFeed = ({ title, date }) => {
     return (
         <div className="rssFeedSection">
             <div className="overviewSection">
-                
                 <div className="leftOverview">
                     <div className="singleItem">
                         <div className="title">

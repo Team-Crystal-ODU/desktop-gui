@@ -13,6 +13,29 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: sans-serif;
+  color: #fffefb;
 }
+
+.head__text {
+  text-align: center;
+  -webkit-text-size-adjust: auto;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.pics {
+  background:none;
+  flex: auto;
+  align-items: center;
+  border-radius: 30px;
+  width: 430px;
+  height: 160px;
+}
+
+.borders {
+    max-width: 500px;
+    padding: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+  }

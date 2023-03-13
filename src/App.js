@@ -1,6 +1,5 @@
 import './App.css';
 import Body from './components/body section/Body';
-import News from './components/news section/News';
 import Login from './components/login section/Login';
 import Register from "./components/login section/Register";
 

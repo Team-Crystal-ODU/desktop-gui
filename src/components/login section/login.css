@@ -1,3 +1,25 @@
+:root {
+  --PrimaryColor: #4a717b;
+  --HoverColor: #bdf094;
+  --brightGreen: #00cb8d;
+  --paleGreen: hsl(192,40%,90%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --bgColor: hsl(193,100%,13%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  --greenColor: hsl(184,100%,16%);
+  /* Font and typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
 .auth-form-container .login-form, .auth-form-container .register-form {
   display: flex;
   flex-direction: column;
@@ -13,13 +35,35 @@
   border: none;
   border-radius: 10px;
 }
+.auth-form-container .login-form .uidnote .offscreen, .auth-form-container .register-form .uidnote .offscreen {
+  position: absolute;
+  left: -9999px;
+}
 .auth-form-container .login-form button, .auth-form-container .register-form button {
   border: none;
-  background-color: white;
+  background-color: var(--greyText);
   padding: 20px;
   border-radius: 10px;
   cursor: pointer;
-  color: #7439db;
+  color: var(--PrimaryColor);
+  font-weight: bold;
+}
+.auth-form-container .login-form .instructions, .auth-form-container .register-form .instructions {
+  font-size: var(--normalFontSize);
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+}
+.auth-form-container .login-form .instructions > svg, .auth-form-container .register-form .instructions > svg {
+  margin-right: 0.25rem;
+}
+.auth-form-container .login-form .offscreen, .auth-form-container .register-form .offscreen {
+  position: absolute;
+  left: -9999px;
 }
 .auth-form-container .link-btn {
   background: none;

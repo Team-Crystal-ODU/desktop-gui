@@ -31,7 +31,7 @@ const Top = () => {
                     <div className="adminImage">
                         <img src={img} alt="" />
                     </div>
-                    <p>Hi, Stacey</p>
+                    <a href="/">Hi, Stacey</a>
                     {/*<a href="/login">Logout</a>*/}
                 </div>
             </div>

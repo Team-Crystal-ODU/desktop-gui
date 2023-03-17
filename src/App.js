@@ -11,9 +11,9 @@ function App() {
   return (
     <div data-testid="test-1" className="container">
       <Routes>
-        <Route path='/login' element={<Login />} />
+        <Route path='/' element={<Login />} />
         <Route path='/register' element={<Register />} />
-        <Route path='/' element={<Body />} />
+        <Route path='/home' element={<Body />} />
         <Route path='/news' element={<RSS />} />
       </Routes>
     </div>

@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import './hero.css';
 
 // Imported Images ============>
-import img from '../../../Assets/globe(1).png';
 import img2 from '../../../Assets/graph.png';
 
 // Earth Imports ============>
@@ -11,7 +10,27 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { Earth } from "../earth section/Earth";
 
+
 const Hero = () => {
+    // fetch world space api data
+    const [users, setUser] = useState([]);
+    useEffect(() => {
+       fetch('http://localhost:4000/carbon?user=ecogamer')
+       //fetch('https://jsonplaceholder.typicode.com/users?_limit=10')
+          .then((response) => response.json())
+          .then((data) => {
+             console.log(data);
+             setUser(data);
+          })
+          .catch((err) => {
+             console.log(err.message);
+          });
+    }, []);
+
+    
+
+  
+    // consume world space api data
     return (
         <div className="heroSection">
             

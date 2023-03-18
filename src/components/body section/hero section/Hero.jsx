@@ -55,10 +55,10 @@ const Hero = () => {
                         </div>
                     </div>
 
-                    <div className="singleItem efficiency">
+                    {/*<div className="singleItem efficiency">
                         <span className="score">33</span>
                         <h3 className="efficiencyScore">Your Efficiency Score</h3>
-                    </div>
+                    </div>*/}
                 </div>
 
                 <div className="middleOverview">
@@ -71,7 +71,7 @@ const Hero = () => {
                             </Suspense>
                         </Canvas>
                     </div>
-                    <p>355 PPM</p> 
+                    <p>{users.ppm} PPM</p> 
                 </div>
 
                 <div className="rightOverview flex">

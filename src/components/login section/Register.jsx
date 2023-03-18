@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from '../../api/axios';
 
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
@@ -23,6 +24,8 @@ export const Register = () => {
 
     const [errMsg, setErrMsg] = useState('');
     const [success, setSuccess] = useState(false);
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         userRef.current.focus();
@@ -51,7 +54,15 @@ export const Register = () => {
             setErrMsg("Invalid Entry");
             return;
         }
-        try {
+
+        /* Temp Register Success */
+        setUser('');
+        setPwd('');
+        setMatchPwd('');
+        setSuccess(true);
+        navigate("/home");
+
+        /*try {
             const response = await axios.post(REGISTER_URL,
                 JSON.stringify({ user, pwd }),
                 {
@@ -59,12 +70,10 @@ export const Register = () => {
                     withCredentials: true
                 }
             );
-            setSuccess(true);
-            //clear state and controlled inputs
-            //need value attrib on inputs for this
             setUser('');
             setPwd('');
             setMatchPwd('');
+            setSuccess(true);
         } catch (err) {
             if (!err?.response) {
                 setErrMsg('No Server Response');
@@ -74,7 +83,7 @@ export const Register = () => {
                 setErrMsg('Registration Failed')
             }
             errRef.current.focus();
-        }
+        }*/
     }
 
 
@@ -85,7 +94,7 @@ export const Register = () => {
                     <h1>You are registered!</h1>
                     <br />
                     <p>
-                        <a href="/">Sign In</a>
+                        <a href="/home">Go to Home</a>
                     </p>
                 </section>
             ) : (
@@ -102,7 +111,7 @@ export const Register = () => {
                         onChange={(e) => setUser(e.target.value)}
                         value={user}
                         required
-                        placeholder="Username"
+                        placeholder="username"
                         aria-invalid={validName ? "false" : "true"}
                         aria-describedby="uidnote"
                         onFocus={() => setUserFocus(true)}

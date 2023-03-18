@@ -1,25 +1,35 @@
 import React, { useRef, useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import './login.css';
 
-export const Login = (props) => {
-    const [email, setEmail] = useState('');
+export const Login = () => {
+    const userRef = useRef();
+    const errRef = useRef();
+
+    const [user, setUser] = useState('');
     const [pwd, setPwd] = useState('');
 
-    const emailRef = useRef();
-    const errRef = useRef();
     const [errMsg, setErrMsg] = useState('');
     const [success, setSuccess] = useState(false);
 
+    const navigate = useNavigate();
+
+    /*useEffect(() => {
+        userRef.current.focus();
+    }, [])*/
+
     useEffect(() => {
         setErrMsg('');
-    }, [email, pwd])
+    }, [user, pwd])
 
     const handleSubmit = async (e) => {
+        /* Temp Login Success */
         e.preventDefault();
-        console.log(email, pwd);
-        setEmail('');
+        console.log(user, pwd);
+        setUser('');
         setPwd('');
         setSuccess(true);
+        navigate("/home");
     }
 
     return (
@@ -37,13 +47,12 @@ export const Login = (props) => {
                 <p ref={errRef} className={errMsg ? "errMsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
                 <h2>Login</h2>
                 <form className="login-form" onSubmit={handleSubmit}>
-                    <label htmlFor="email">email</label>
-                    <input value={email} 
-                        onChange={(e) => setEmail(e.target.value)}
-                        type="email" 
-                        placeholder="youremail@gmail.com" 
-                        id="email" 
-                        name="email"
+                    <label htmlFor="username">username</label>
+                    <input value={user} 
+                        onChange={(e) => setUser(e.target.value)}
+                        type="text" 
+                        placeholder="username" 
+                        id="username" 
                         autoComplete="off"
                         required />
                     <label htmlFor="password">password</label>

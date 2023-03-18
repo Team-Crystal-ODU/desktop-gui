@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './hero.css';
 
-// Imported Images ============>
+// Image Imports ============>
 import img2 from '../../../Assets/graph.png';
 
 // Earth Imports ============>
@@ -26,9 +26,6 @@ const Hero = () => {
              console.log(err.message);
           });
     }, []);
-
-    
-
   
     // consume world space api data
     return (
@@ -43,7 +40,7 @@ const Hero = () => {
                 <div className="leftOverview">
                     <div className="title">Consumption Overview</div>
                     <div className="singleItem">
-                        <span className="score">50</span>
+                        <span className="score">{users.co2}</span>
                         <div>
                             <h3>Readout</h3>
                             <p className="units">lbs of CO<sub>2</sub></p>
@@ -51,7 +48,7 @@ const Hero = () => {
                     </div>
 
                     <div className="singleItem">
-                        <span className="score">43</span>
+                        <span className="score">{users.miles_drive}</span>
                         <div>
                             <h3>Driven Equivalent</h3>
                             <p className="units">miles driven</p>

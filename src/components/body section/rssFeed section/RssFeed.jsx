@@ -1,7 +1,5 @@
 import React from "react";
 import './rssFeed.css';
-import App from "../../news section/News"
-
 
 const RssFeed = ({ title, date }) => {
     return (
@@ -21,7 +19,3 @@ const RssFeed = ({ title, date }) => {
 }
 
 export default RssFeed;
-
-{/* <div className="rssFeedSection">
-        <App />
-</div> */}

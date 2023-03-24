@@ -1,6 +1,6 @@
 import React from "react";
 import './rssFeed.css';
-import App from "../../news page/News"
+import App from "../../news section/News"
 
 
 const RssFeed = ({ title, date }) => {

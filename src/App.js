@@ -4,7 +4,7 @@ import Login from './components/login section/Login';
 import Register from "./components/login section/Register";
 
 import { Routes, Route } from 'react-router-dom';
-import RSS from './components/news page/News';
+import RSS from './components/news section/News';
 
 
 function App() {

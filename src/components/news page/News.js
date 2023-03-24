@@ -1,9 +1,9 @@
 import axios from "axios";
 import {useEffect ,useState} from "react";
 import Feed from "./Feed";
-import "./index.css";
+import "./news.css";
 
-function App() {
+function News() {
   const [articles, setArticles] = useState([]);
 
   const getArticles = async () => {
@@ -25,7 +25,7 @@ function App() {
       <div className="newsContainer">
         <div className="head__text">
               <h1>Eco News</h1>
-              <a href="/">Return to Home</a>
+              <a href="/home">Return to Home</a>
         </div>
         <div className="articles">
             <div className="pics">
@@ -45,4 +45,4 @@ function App() {
   );
 }
 
-export default App;
+export default News;

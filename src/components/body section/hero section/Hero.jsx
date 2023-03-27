@@ -40,31 +40,35 @@ const Hero = () => {
              
                 <div className="leftOverview">
                     <div className="title">Consumption Overview</div>
-                    <div className="singleItem">
-                        <span className="score">{users.co2}</span>
-                        <div>
-                            <h3>Readout</h3>
-                            <p className="units">lbs of CO<sub>2</sub></p>
+                    <div className="scoreContainer flex">
+                        <div className="singleItem">
+                            <span className="score">{users.co2}</span>
+                            <div>
+                                <h3>Readout</h3>
+                                <p className="units">lbs of CO<sub>2</sub></p>
+                            </div>
+                        </div>
+
+                        <div className="singleItem">
+                            <span className="score">{users.miles_drive}</span>
+                            <div>
+                                <h3>Driven Equivalent</h3>
+                                <p className="units">miles driven</p>
+                            </div>
+                        </div>
+
+                        <div className="singleItem">
+                            <span className="score">{users.miles_drive}</span>
+                            <div>
+                                <h3>Watt Hours</h3>
+                                <p className="units">watt-hours</p>
+                            </div>
                         </div>
                     </div>
-
-                    <div className="singleItem">
-                        <span className="score">{users.miles_drive}</span>
-                        <div>
-                            <h3>Driven Equivalent</h3>
-                            <p className="units">miles driven</p>
-                        </div>
-                    </div>
-
-                    {/*<div className="singleItem efficiency">
-                        <span className="score">33</span>
-                        <h3 className="efficiencyScore">Your Efficiency Score</h3>
-                    </div>*/}
                 </div>
 
-                <div className="middleOverview">
+                <div className="rightOverview">
                     <div className="title">Ecosystem Health</div>
-                    {/*<img src={img} alt="Image Title" />*/}
                     <div className="earth">
                         <Canvas>
                             <Suspense fallback={null}>
@@ -73,12 +77,6 @@ const Hero = () => {
                         </Canvas>
                     </div>
                     <p>{users.ppm} PPM</p> 
-                </div>
-
-                <div className="rightOverview flex">
-                    <div className="chartContainer">
-                        <Chart />
-                    </div>
                 </div>
             </div>
         </div>

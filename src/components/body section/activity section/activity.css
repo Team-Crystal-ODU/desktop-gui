@@ -27,32 +27,22 @@
 .activitySection .overviewSection {
   justify-content: space-between;
 }
-.activitySection .overviewSection .leftOverview .title, .activitySection .overviewSection .rightOverview .title {
+.activitySection .overviewSection .leftOverview .title {
   color: var(--whiteColor);
   margin: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-weight: 600;
 }
-.activitySection .overviewSection .leftOverview .singleItem, .activitySection .overviewSection .rightOverview .singleItem {
-  position: relative;
-  height: 10px;
-  width: 400px;
-  display: flex;
-  align-items: center;
-  margin: 1rem;
-  padding: 2rem;
-  border-radius: 20px;
-  background-color: var(--PrimaryColor);
+.activitySection .overviewSection .leftOverview .title .days {
+  color: var(--brightGreen);
 }
-.activitySection .overviewSection .leftOverview .singleItem h3, .activitySection .overviewSection .rightOverview .singleItem h3 {
-  font-size: var(--h3FontSize);
-  color: var(--blackColor);
-  padding: 3rem 0;
+.activitySection .overviewSection .leftOverview h5 {
+  margin: 0 1rem 2rem 1rem;
 }
-.activitySection .overviewSection .rightOverview .itemScroll {
+.activitySection .overviewSection .leftOverview .chartContainer {
   position: relative;
   height: 220px;
-  width: 750px;
+  width: 855px;
   display: flex;
   align-items: center;
   margin: 1rem;
@@ -60,7 +50,25 @@
   border-radius: 25px;
   background-color: var(--PrimaryColor);
 }
-.activitySection .overviewSection .rightOverview .itemScroll img {
-  width: 160px;
-  margin: 0.5rem;
+.activitySection .overviewSection .rightOverview .title {
+  color: var(--whiteColor);
+  margin: 1rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+.activitySection .overviewSection .rightOverview .singleItem {
+  position: relative;
+  height: 10px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: var(--PrimaryColor);
+}
+.activitySection .overviewSection .rightOverview .singleItem h3 {
+  font-size: var(--h3FontSize);
+  color: var(--blackColor);
+  padding: 3rem 0;
 }/*# sourceMappingURL=activity.css.map */

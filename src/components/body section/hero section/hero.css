@@ -48,10 +48,10 @@
   margin-bottom: 2rem;
   font-weight: 600;
 }
-.heroSection .overviewSection .leftOverview .singleItem {
+.heroSection .overviewSection .leftOverview .scoreContainer .singleItem {
   position: relative;
-  height: 10px;
-  width: 280px;
+  height: 230px;
+  width: 270px;
   display: flex;
   align-items: center;
   margin: 1rem;
@@ -59,42 +59,33 @@
   border-radius: 25px;
   border: 3px solid var(--greenColor);
 }
-.heroSection .overviewSection .leftOverview .singleItem .score {
+.heroSection .overviewSection .leftOverview .scoreContainer .singleItem .score {
   font-size: 20px;
   font-weight: 600;
   color: var(--whiteColor);
   padding: 0 15px;
 }
-.heroSection .overviewSection .leftOverview .singleItem h3 {
+.heroSection .overviewSection .leftOverview .scoreContainer .singleItem h3 {
   font-size: var(--normalFontSize);
   color: var(--brightGreen);
 }
-.heroSection .overviewSection .leftOverview .singleItem .units {
+.heroSection .overviewSection .leftOverview .scoreContainer .singleItem .units {
   font-size: var(--smallFontSize);
   color: var(--whiteColor);
 }
-.heroSection .overviewSection .leftOverview .efficiency {
-  background: var(--greenColor);
-}
-.heroSection .overviewSection .leftOverview .efficiency .efficiencyScore {
-  color: var(--whiteColor);
-}
-.heroSection .overviewSection .middleOverview {
+.heroSection .overviewSection .rightOverview {
   padding: 1rem;
   margin: 1rem;
   text-align: center;
   color: var(--whiteColor);
 }
-.heroSection .overviewSection .middleOverview .title {
+.heroSection .overviewSection .rightOverview .title {
   font-weight: 600;
 }
-.heroSection .overviewSection .middleOverview .earth {
+.heroSection .overviewSection .rightOverview .earth {
   height: 250px;
 }
-.heroSection .overviewSection .middleOverview p {
+.heroSection .overviewSection .rightOverview p {
   font-weight: 800;
   margin-top: 1rem;
-}
-.heroSection .overviewSection .rightOverview .chartContainer {
-  width: 280px;
 }/*# sourceMappingURL=hero.css.map */

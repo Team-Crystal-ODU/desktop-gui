@@ -1,5 +1,6 @@
 import React from "react";
 import './activity.css';
+import Chart from '../../chart/Chart';
 
 // Imported Images ============>
 import img from '../../../Assets/eldenRing.png';
@@ -12,29 +13,23 @@ const Activity = () => {
         <div className="activitySection">
             <div className="overviewSection flex">
                 <div className="leftOverview">
-                    <div className="title">Goals</div>
-                    <div className="singleItem">
-                        <h3>Goal 1</h3>
-                    </div>
-
-                    <div className="singleItem">
-                        <h3>Goal 2</h3>
-                    </div>
-
-                    <div className="singleItem">
-                        <h3>Goal 3</h3>
+                    <div className="title">Energy Usage <span className="days">(Past 5 Days)</span></div>
+                    <div className="chartContainer">
+                        <Chart />
                     </div>
                 </div>
-
                 <div className="rightOverview">
-                    <div className="title">Recently Played</div>
-                    <div className="rightCard">
-                        <div className="itemScroll">
-                            <img src={img} alt="" />
-                            <img src={img1} alt="" />
-                            <img src={img2} alt="" />
-                            <img src={img3} alt="" />
-                        </div>
+                    <div className="title">Recent Usage</div>
+                    <div className="singleItem">
+                        <h3>CPU...</h3>
+                    </div>
+
+                    <div className="singleItem">
+                        <h3>GPU...</h3>
+                    </div>
+
+                    <div className="singleItem">
+                        <h3>...</h3>
                     </div>
                 </div>
             </div>

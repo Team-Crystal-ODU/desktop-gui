@@ -17,7 +17,6 @@ const Hero = () => {
     const [users, setUser] = useState([]);
     useEffect(() => {
        fetch('http://localhost:4005/carbon?user=ecogamer')
-       //fetch('https://jsonplaceholder.typicode.com/users?_limit=10')
           .then((response) => response.json())
           .then((data) => {
              console.log(data);
@@ -32,14 +31,14 @@ const Hero = () => {
     return (
         <div className="heroSection">
             
-            <div className="rank">
+            {/*<div className="rank">
                 <div className="innerRank"></div>
-            </div>
+            </div>*/}
 
             <div className="overviewSection flex"> 
              
                 <div className="leftOverview">
-                    <div className="title">Consumption Overview</div>
+                    <div className="title">Consumption Overview <span className="days">(Last 5 Days)</span></div>
                     <div className="scoreContainer flex">
                         <div className="singleItem">
                             <span className="score">{users.co2}</span>

@@ -50,6 +50,10 @@
                 margin: 1rem;
                 margin-bottom: 2rem;
                 font-weight: 600;
+
+                .days {
+                    color: var(--brightGreen);
+                }
             }
 
             .scoreContainer {

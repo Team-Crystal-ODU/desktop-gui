@@ -58,7 +58,7 @@
 }
 .activitySection .overviewSection .rightOverview .singleItem {
   position: relative;
-  height: 10px;
+  height: 100px;
   width: 300px;
   display: flex;
   align-items: center;

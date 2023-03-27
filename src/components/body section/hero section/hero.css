@@ -48,6 +48,9 @@
   margin-bottom: 2rem;
   font-weight: 600;
 }
+.heroSection .overviewSection .leftOverview .title .days {
+  color: var(--brightGreen);
+}
 .heroSection .overviewSection .leftOverview .scoreContainer .singleItem {
   position: relative;
   height: 230px;

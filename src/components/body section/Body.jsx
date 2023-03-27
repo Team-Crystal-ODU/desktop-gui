@@ -7,7 +7,6 @@ import Activity from './activity section/Activity';
 import Hero from './hero section/Hero';
 import RssFeed from './rssFeed section/RssFeed';
 
-
 // ======================> RSS Feed imports
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -15,7 +14,7 @@ import { useEffect, useState } from "react";
 // Imported Icons ============>
 import {IoIosArrowForward} from 'react-icons/io';
 import {IoIosArrowBack} from 'react-icons/io';
-import { parseDate } from "./rssFeed section/util";
+
 
 const Body = () => {
     const [articles, setArticles] = useState([]);
@@ -47,8 +46,7 @@ const Body = () => {
                             <RssFeed 
                                 key={i}
                                 title={item.item.title}
-                                //date={item.item.pubDate}
-                                date={parseDate(item.item.pubDate)}
+                                date={item.item.pubDate.substring(0, 16)}
                             />
                         )}
                     </div> 

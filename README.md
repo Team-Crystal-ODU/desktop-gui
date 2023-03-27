@@ -3,11 +3,6 @@
 https://user-images.githubusercontent.com/76723573/224543399-aed24a0f-a327-4af1-9729-5cf5bc8ed284.mov
 
 
-
-[Screen Recording 2023-03-26 at 10.20.02 PM.zip](https://github.com/Team-Crystal-ODU/desktop-gui/files/11074035/Screen.Recording.2023-03-26.at.10.20.02.PM.zip)
-
-
-
 ## Available Scripts
 
 In the project directory, you can run:

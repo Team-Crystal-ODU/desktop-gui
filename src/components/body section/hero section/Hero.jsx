@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './hero.css';
+import Chart from '../../chart/Chart';
 
 // Image Imports ============>
 import img2 from '../../../Assets/graph.png';
@@ -75,7 +76,9 @@ const Hero = () => {
                 </div>
 
                 <div className="rightOverview flex">
-                    <img src={img2} alt="Image Title" />
+                    <div className="chartContainer">
+                        <Chart />
+                    </div>
                 </div>
             </div>
         </div>

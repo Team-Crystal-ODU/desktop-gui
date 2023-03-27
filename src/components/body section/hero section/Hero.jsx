@@ -16,7 +16,7 @@ const Hero = () => {
     // fetch world space api data
     const [users, setUser] = useState([]);
     useEffect(() => {
-       fetch('http://localhost:4000/carbon?user=ecogamer')
+       fetch('http://localhost:4005/carbon?user=ecogamer')
        //fetch('https://jsonplaceholder.typicode.com/users?_limit=10')
           .then((response) => response.json())
           .then((data) => {

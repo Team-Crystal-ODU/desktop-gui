@@ -12,6 +12,10 @@ import RssFeed from './rssFeed section/RssFeed';
 import axios from "axios";
 import { useEffect, useState } from "react";
 
+// Imported Icons ============>
+import {IoIosArrowForward} from 'react-icons/io';
+import {IoIosArrowBack} from 'react-icons/io';
+
 const Body = () => {
     const [articles, setArticles] = useState([]);
 
@@ -35,15 +39,19 @@ const Body = () => {
                 <Hero />
                 <Activity />
                 <a classname="newsTitle" href="/news">Eco News</a>
-                <div className="newsBlock flex">
-                    {articles.map((item, i) =>
-                        <RssFeed 
-                            key={i}
-                            title={item.item.title}
-                            date={item.item.pubDate}
-                        />
-                    )}
-                </div> 
+                <div className="scrollContainer flex">
+                    <IoIosArrowBack className="icon" />
+                    <div className="newsBlock">
+                        {articles.map((item, i) =>
+                            <RssFeed 
+                                key={i}
+                                title={item.item.title}
+                                date={item.item.pubDate}
+                            />
+                        )}
+                    </div> 
+                    <IoIosArrowForward className="icon" />
+                </div>
             </div>
         </div>
     );

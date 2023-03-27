@@ -14,4 +14,21 @@
   margin: 1rem;
   margin-bottom: 2rem;
   font-weight: 600;
+}
+.mainContent .bottom .scrollContainer {
+  justify-content: space-between;
+}
+.mainContent .bottom .scrollContainer .newsBlock {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 23%;
+  gap: 1rem;
+  margin: 2rem 0;
+  overflow-x: auto;
+}
+.mainContent .bottom .scrollContainer .icon {
+  position: relative;
+  color: var(--whiteColor);
+  font-size: 60px;
+  top: 50%;
 }/*# sourceMappingURL=body.css.map */

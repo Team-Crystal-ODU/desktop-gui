@@ -4,15 +4,9 @@ import './rssFeed.css';
 const RssFeed = ({ title, date }) => {
     return (
         <div className="rssFeedSection">
-            <div className="overviewSection">
-                <div className="leftOverview">
-                    <div className="singleItem">
-                        <div className="title">
-                            <h3 className="text-xl mb-1">{title}</h3>
-                        </div>
-                        <p className="date">{date}</p>
-                    </div>
-                </div>
+            <div className="singleItem">
+                <h3 className="title">{title}</h3>
+                <p className="date">{date}</p>
             </div>
         </div>  
     )

@@ -37,6 +37,8 @@ function News() {
               title = {item.item.title}
               link = {item.item.link}
               date = {item.item.pubDate}
+              picture = {item.item.content}
+              content = {item.item.contentSnippet}
             />
             )}
         </div>

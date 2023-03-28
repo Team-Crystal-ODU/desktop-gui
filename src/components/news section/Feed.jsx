@@ -1,3 +1,4 @@
+import './news.css'
 const Feed = ({title, link, date, content}) => {
    
     let formatted = {day: "numeric", month: "long", year: "numeric"}
@@ -6,9 +7,11 @@ const Feed = ({title, link, date, content}) => {
         <>
             <a href ={link} target = "_blank"
             rel= "noopener noreferrer">
-            <h3>{title} </h3>
+            <h2>{title} </h2>
                 <p>{articleDate}</p>
+             <h3>{content}</h3>   
             </a>
+
         </>
     )
 }

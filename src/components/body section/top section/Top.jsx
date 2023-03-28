@@ -18,7 +18,6 @@ const Top = () => {
                         <img src={logo} alt="World Space Logo" />
                         <h1>World Space.</h1>
                     </div>
-                    {/*<p>Hello Simon, Welcome back!</p>*/}
                 </div>
 
                 <div className="searchBar flex">

@@ -1,6 +1,7 @@
 ## World Space GUI
 
-https://user-images.githubusercontent.com/76723573/224543399-aed24a0f-a327-4af1-9729-5cf5bc8ed284.mov
+https://user-images.githubusercontent.com/76723573/227826554-fc70022c-eec3-4c45-9799-2e5af9adf9f2.mov
+
 
 ## Available Scripts
 

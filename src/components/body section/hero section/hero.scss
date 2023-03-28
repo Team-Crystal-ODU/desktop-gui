@@ -50,47 +50,45 @@
                 margin: 1rem;
                 margin-bottom: 2rem;
                 font-weight: 600;
-            }
 
-            .singleItem {
-                position: relative;
-                height: 10px;
-                width: 280px;
-                display: flex;
-                align-items: center;
-                margin: 1rem;
-                padding: 2rem;
-                border-radius: 25px;
-                border: 3px solid var(--greenColor);
-
-                .score {
-                    font-size: 20px;
-                    font-weight: 600;
-                    color: var(--whiteColor);
-                    padding: 0 15px;
-                }
-
-                h3 {
-                    font-size: var(--normalFontSize);
+                .days {
                     color: var(--brightGreen);
                 }
-
-                .units {
-                    font-size: var(--smallFontSize);
-                    color: var(--whiteColor);
-                }
             }
 
-            .efficiency {
-                background: var(--greenColor);
+            .scoreContainer {
+                .singleItem {
+                    position: relative;
+                    height: 230px;
+                    width: 270px;
+                    display: flex;
+                    align-items: center;
+                    margin: 1rem;
+                    padding: 2rem;
+                    border-radius: 25px;
+                    border: 3px solid var(--greenColor);
 
-                .efficiencyScore {
-                    color: var(--whiteColor);
+                    .score {
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: var(--whiteColor);
+                        padding: 0 15px;
+                    }
+
+                    h3 {
+                        font-size: var(--normalFontSize);
+                        color: var(--brightGreen);
+                    }
+
+                    .units {
+                        font-size: var(--smallFontSize);
+                        color: var(--whiteColor);
+                    }
                 }
             }
         }
 
-        .middleOverview {
+        .rightOverview {
             padding: 1rem;
             margin: 1rem;
             text-align: center;
@@ -107,12 +105,6 @@
             p {
                 font-weight: 800;
                 margin-top: 1rem;
-            }
-        }
-
-        .rightOverview {
-            img {
-                width: 280px;
             }
         }
     }

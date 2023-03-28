@@ -27,19 +27,49 @@
     
     .overviewSection {
         justify-content: space-between;
-        
-        .leftOverview, .rightOverview {
+
+        .leftOverview {
             .title {
                 color: var(--whiteColor);
                 margin: 1rem;
-                margin-bottom: 2rem;
+                margin-bottom: 3rem;
+                font-weight: 600;
+
+                .days {
+                    color: var(--brightGreen);
+                }
+            }
+
+            h5 {
+                margin: 0 1rem 2rem 1rem;
+            }
+
+            .chartContainer {
+                position: relative;
+                height: 220px;
+                width: 855px;
+                display: flex;
+                align-items: center;
+                margin: 1rem;
+                padding: 2rem;
+                border-radius: 25px;
+                background-color: var(--PrimaryColor);
+            }
+    
+        }
+
+        .rightOverview {
+            .title {
+                color: var(--whiteColor);
+                margin: 1rem;
+                margin-bottom: 3rem;
                 font-weight: 600;
             }
 
             .singleItem {
                 position: relative;
-                height: 10px;
-                width: 400px;
+                height: 100px;
+                width: 300px;
                 display: flex;
                 align-items: center;
                 margin: 1rem;
@@ -51,25 +81,6 @@
                     font-size: var(--h3FontSize);
                     color: var(--blackColor);
                     padding: 3rem 0;
-                }
-            }
-        }
-
-        .rightOverview {
-            .itemScroll {
-                position: relative;
-                height: 220px;
-                width: 750px;
-                display: flex;
-                align-items: center;
-                margin: 1rem;
-                padding: 2rem;
-                border-radius: 25px;
-                background-color: var(--PrimaryColor);
-
-                img {
-                   width: 160px; 
-                   margin: 0.5rem;
                 }
             }
         }

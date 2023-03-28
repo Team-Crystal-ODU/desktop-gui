@@ -44,7 +44,7 @@ const Hero = () => {
                             <span className="score">{users.co2}</span>
                             <div>
                                 <h3>Readout</h3>
-                                <p className="units">lbs of CO<sub>2</sub></p>
+                                <p className="units">Total lbs of CO<sub>2</sub></p>
                             </div>
                         </div>
 
@@ -52,7 +52,7 @@ const Hero = () => {
                             <span className="score">{users.miles_driven}</span>
                             <div>
                                 <h3>Driven Equivalent</h3>
-                                <p className="units">miles driven</p>
+                                <p className="units">Total miles driven</p>
                             </div>
                         </div>
 
@@ -60,7 +60,7 @@ const Hero = () => {
                             <span className="score">{users.watt_hours}</span>
                             <div>
                                 <h3>Watt Hours</h3>
-                                <p className="units">watt-hours</p>
+                                <p className="units">Total watt-hours</p>
                             </div>
                         </div>
                     </div>

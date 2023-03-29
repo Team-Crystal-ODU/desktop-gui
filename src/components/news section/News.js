@@ -2,6 +2,7 @@ import axios from "axios";
 import {useEffect ,useState} from "react";
 import Feed from "./Feed";
 import "./news.css";
+import Top from "../body section/top section/Top";
 
 function News() {
   const [articles, setArticles] = useState([]);
@@ -21,24 +22,26 @@ function News() {
 
   console.log(articles);
   return (
-  <div className="newsContainer">
-
-    <div className="head__text">
-        <h1>Eco News</h1>
-        <a className="link" href="/home">Return to Home</a>
+    <div className="newsContainer">
+      <Top />
+      <div className="articleWrapper">
+        <div className="head__text">
+            <h1>Eco News</h1>
+            <a className="link" href="/home">Return to Home</a>
+        </div>
+        <div className="articles"> 
+          {articles.map((item, i) =>
+            <Feed 
+            key = {i}
+            title = {item.item.title}
+            link = {item.item.link}
+            date = {item.item.pubDate}
+            content = {item.item.contentSnippet}
+            />
+          )}
+        </div>
+      </div>
     </div>
-    <div className="articles"> 
-      {articles.map((item, i) =>
-        <Feed 
-        key = {i}
-        title = {item.item.title}
-        link = {item.item.link}
-        date = {item.item.pubDate}
-        content = {item.item.contentSnippet}
-        />
-      )}
-    </div>
-  </div>
   );
 }
 

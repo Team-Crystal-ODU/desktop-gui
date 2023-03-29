@@ -2,26 +2,32 @@ import cors from "cors";
 import express from "express";
 import RSSParser from "rss-parser";
 
-const feedURL = "https://yaleclimateconnections.org/feed/";
-const parser = new RSSParser();
+const feedURLs = [
+    "https://yaleclimateconnections.org/feed/",
+    "https://rss2.feedspot.com/https://www.climatelinks.org/blog?context=3710842201",
+    "https://www.climategen.org/feed/",
+  ];
+  
+  const parser = new RSSParser();
+  const feedsPromise = Promise.all(feedURLs.map((url) => parser.parseURL(url)));
+
 let articles = [];
 
-const parse = async url => {
-    const feed = await parser.parseURL(url);
-
-    feed.items.forEach(item => {
-        articles.push({ item })
-    })
-}
-
-parse(feedURL);
 
 let app = express();
 app.use(cors());
 
-app.get('/', (req, res) => {
-    res.send(articles);
-})
+app.get("/", async (_req, res, next) => {
+    try {
+      res.send(
+        (await feedsPromise).flatMap(({ items }) =>
+          items.map((item) => ({ item }))
+        )
+      );
+    } catch (err) {
+      next(err); // pass any errors to the error handler
+    }
+  });
 
 const server = app.listen("4000", () => {
     console.log("App is listening at http://localhost:4000");

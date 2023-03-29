@@ -2,7 +2,6 @@ import axios from "axios";
 import {useEffect ,useState} from "react";
 import Feed from "./Feed";
 import "./news.css";
-import Top2 from "./Top2";
 
 function News() {
   const [articles, setArticles] = useState([]);
@@ -23,7 +22,7 @@ function News() {
   console.log(articles);
   return (
   <div className="newsContainer">
-    <Top2/>
+
     <div className="head__text">
         <h1>Eco News</h1>
         <a className="link" href="/home">Return to Home</a>

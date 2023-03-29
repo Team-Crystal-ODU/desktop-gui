@@ -2,19 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 */
-
-body {
+* {
   margin: 0;
-  font-family: serif;
-  letter-spacing: 0.5px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #fffefb;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: scroll;
 }
 
-code {
-  font-family: sans-serif;
-  color: #fffefb;
+.articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  overflow-y: scroll;
+  overflow-wrap: normal;
+}
+
+
+.link{
+  text-align: center;
+  -webkit-text-size-adjust: auto;
+  color: white;
 }
 
 .head__text {
@@ -33,13 +40,19 @@ code {
   height: 160px;
 }
 
-.articles {
+.text {
+    color: white;
+    text-align: left;
+    overflow-wrap: break-word;
     max-width: 500px;
     padding: 30px;
-    border: 1px solid white;
+    border: 1px solid lightgray;
     border-radius: 5px;
-  }
-
-  .text {
-    color: white;
-  }
+    
+}
+.text1{
+  font-style: normal;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  overflow-wrap: break-word;
+  
+}

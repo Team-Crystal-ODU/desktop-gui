@@ -5,7 +5,7 @@ const RssFeed = ({ title, date }) => {
     return (
         <div className="rssFeedSection">
             <div className="singleItem">
-                <h3 className="title">{title}</h3>
+                <h3 className="title">{title}... <span>Read More</span></h3>
                 <p className="date">{date}</p>
             </div>
         </div>  

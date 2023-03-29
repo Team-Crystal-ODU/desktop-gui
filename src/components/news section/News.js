@@ -27,7 +27,6 @@ function News() {
       <div className="articleWrapper">
         <div className="head__text">
             <h1>Eco News</h1>
-            <a className="link" href="/home">Return to Home</a>
         </div>
         <div className="articles"> 
           {articles.map((item, i) =>

@@ -14,10 +14,10 @@ const Top = () => {
         <div className="topSection">
             <div className="headerSection flex">
                 <div className="title">
-                    <div className="logoDiv flex">
+                    <a className="logoDiv flex" href="/home">
                         <img src={logo} alt="World Space Logo" />
                         <h1>World Space.</h1>
-                    </div>
+                    </a>
                 </div>
 
                 <div className="searchBar flex">

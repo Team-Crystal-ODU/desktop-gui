@@ -2,6 +2,7 @@ import axios from "axios";
 import {useEffect ,useState} from "react";
 import Feed from "./Feed";
 import "./news.css";
+import {HiOutlineSearch} from 'react-icons/hi';
 
 function News() {
   const [articles, setArticles] = useState([]);
@@ -25,6 +26,10 @@ function News() {
     <div className="head__text">
         <h1>Eco News</h1>
         <a className="link" href="/home">Return to Home</a>
+        <div className="searchBar">
+            <input type="text" placeholder="Search Eco News..." />
+            <HiOutlineSearch className="icon"/>
+        </div>
     </div>
     <div className="articles"> 
       {articles.map((item, i) =>

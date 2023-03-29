@@ -15,11 +15,20 @@
   overflow: auto;
 }
 
+.head__text .search{
+  padding: 0.8rem 2rem;
+  background: var(--whiteColor);
+  border-radius: 100px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .head__text {
   text-align: center;
   -webkit-text-size-adjust: auto;
   color: white;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   overflow: auto;
 }
 

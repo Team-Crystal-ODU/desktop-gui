@@ -1,20 +1,10 @@
-/*@tailwind base;
-@tailwind components;
-@tailwind utilities;
-*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-y: scroll;
-}
+
 
 .articles {
-  display: grid;
+  display: grid ;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  overflow-y: scroll;
-  overflow-wrap: normal;
+  grid-gap: 15px;
+  overflow: auto;
 }
 
 
@@ -22,6 +12,7 @@
   text-align: center;
   -webkit-text-size-adjust: auto;
   color: white;
+  overflow: auto;
 }
 
 .head__text {
@@ -29,15 +20,7 @@
   -webkit-text-size-adjust: auto;
   color: white;
   margin-bottom: 30px;
-}
-
-.pics {
-  background:none;
-  flex: auto;
-  align-items: center;
-  border-radius: 30px;
-  width: 430px;
-  height: 160px;
+  overflow: auto;
 }
 
 .text {
@@ -56,3 +39,4 @@
   overflow-wrap: break-word;
   
 }
+

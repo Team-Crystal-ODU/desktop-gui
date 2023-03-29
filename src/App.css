@@ -84,6 +84,7 @@ body {
   justify-content: center;
   margin: auto;
   padding: 1rem;
+  
 }
 
 .container {
@@ -91,14 +92,16 @@ body {
   width: 95vw;
   height: 95vh;
   display: flex;
-  align-items: center;
+  align-items: auto;
   justify-content: center;
   background: var(--bgColor);
   overflow: hidden;
+  overflow: auto;
   border-radius: 1rem;
   /*box-shadow: 2px 2px 8px var(--greyText);*/
   box-shadow: 2px 2px 8px grey;
   color: var(--greyText);
+  flex: auto;
 }
 
 /* Hide the scroll bar */

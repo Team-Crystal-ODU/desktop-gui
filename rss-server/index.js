@@ -6,6 +6,9 @@ const feedURLs = [
     "https://yaleclimateconnections.org/feed/",
     "https://rss2.feedspot.com/https://www.climatelinks.org/blog?context=3710842201",
     "https://www.climategen.org/feed/",
+    "https://rss2.feedspot.com/https://climate.nasa.gov/blog/",
+    "https://blogs.shell.com/feed/",
+
   ];
   
   const parser = new RSSParser();

@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import './chart.css';
 import { Line } from 'react-chartjs-2';
 import {
@@ -16,6 +17,19 @@ ChartJS.register(
 )
 
 const Chart = () => {
+    // fetch world space api data
+    const [users, setUser] = useState([]);
+    useEffect(() => {
+      fetch('http://localhost:4005/carbon?user=ecogamer')
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            setUser(data);
+          })
+          .catch((err) => {
+            console.log(err.message);
+          });
+    }, []);
     return (
       <div>
         <Line
@@ -23,6 +37,7 @@ const Chart = () => {
                 labels: ['Sun', 'Mon', 'Tues', 'Weds', 'Thurs', 'Fri', 'Sat'],
                 datasets: [{
                     data: [100, 45, 19, 3, 5, 20, 10],
+                    //data: [users.ppm],
                     backgroundColor: ['white'],
                     borderColor: ['#00cb8d'],
                     pointBorderColor: ['white'],
@@ -43,6 +58,11 @@ const Chart = () => {
                       },
                       ticks: {
                         color: 'white'
+                      },
+                      title: {
+                        display: true,
+                        text: 'Avg Watts',
+                        color: ['orange']
                       }
                     },
                   x:{

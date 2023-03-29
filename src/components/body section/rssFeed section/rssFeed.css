@@ -39,4 +39,8 @@
   font-size: var(--normalFontSize);
   color: var(--blackColor);
   padding: 1rem 0;
+}
+.rssFeedSection .singleItem p {
+  position: absolute;
+  bottom: 25%;
 }/*# sourceMappingURL=rssFeed.css.map */

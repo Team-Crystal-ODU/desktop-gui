@@ -14,8 +14,8 @@
   color: white;
   overflow: auto;
 }
-
-.head__text .search{
+.mid,
+ .search{
   padding: 0.8rem 2rem;
   background: var(--whiteColor);
   border-radius: 100px;
@@ -25,6 +25,7 @@
 }
 
 .head__text {
+  margin-top: 20px;
   text-align: center;
   -webkit-text-size-adjust: auto;
   color: white;

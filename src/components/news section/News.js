@@ -2,7 +2,7 @@ import axios from "axios";
 import {useEffect ,useState} from "react";
 import Feed from "./Feed";
 import "./news.css";
-import {HiOutlineSearch} from 'react-icons/hi';
+import Top2 from "./Top2";
 
 function News() {
   const [articles, setArticles] = useState([]);
@@ -23,13 +23,10 @@ function News() {
   console.log(articles);
   return (
   <div className="newsContainer">
+    <Top2/>
     <div className="head__text">
         <h1>Eco News</h1>
         <a className="link" href="/home">Return to Home</a>
-        <div className="searchBar">
-            <input type="text" placeholder="Search Eco News..." />
-            <HiOutlineSearch className="icon"/>
-        </div>
     </div>
     <div className="articles"> 
       {articles.map((item, i) =>

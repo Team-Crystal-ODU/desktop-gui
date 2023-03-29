@@ -41,15 +41,15 @@ const Body = () => {
                 <a classname="newsTitle" href="/news">Eco News</a>
                 <div className="scrollContainer flex">
                     <IoIosArrowBack className="icon" />
-                    <div className="newsBlock">
+                    <a className="newsBlock" href="/news">
                         {articles.map((item, i) =>
                             <RssFeed 
                                 key={i}
-                                title={item.item.title}
+                                title={item.item.title.substring(0, 35)}
                                 date={item.item.pubDate.substring(0, 16)}
                             />
                         )}
-                    </div> 
+                    </a> 
                     <IoIosArrowForward className="icon" />
                 </div>
             </div>

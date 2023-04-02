@@ -18,26 +18,28 @@ ChartJS.register(
 
 const Chart = () => {
     // fetch world space api data
-    const [users, setUser] = useState([]);
+    const [chart, setChart] = useState([]);
     useEffect(() => {
       fetch('http://localhost:4005/carbon?user=ecogamer')
           .then((response) => response.json())
           .then((data) => {
             console.log(data);
-            setUser(data);
+            setChart(data);
           })
           .catch((err) => {
             console.log(err.message);
           });
     }, []);
+
     return (
       <div>
         <Line
             data= {{
-                labels: ['Sun', 'Mon', 'Tues', 'Weds', 'Thurs', 'Fri', 'Sat'],
+                //labels: ['Sun', 'Mon', 'Tues', 'Weds', 'Thurs', 'Fri', 'Sat'],
+                labels: chart.chart_data?.map(x => x.hour_ending),
                 datasets: [{
-                    data: [100, 45, 19, 3, 5, 20, 10],
-                    //data: [users.ppm],
+                    //data: [100, 45, 19, 3, 5, 20, 10],
+                    data: chart.chart_data?.map(x => x.average_watts),
                     backgroundColor: ['white'],
                     borderColor: ['#00cb8d'],
                     pointBorderColor: ['white'],

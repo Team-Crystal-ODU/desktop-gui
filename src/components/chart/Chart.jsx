@@ -18,6 +18,7 @@ ChartJS.register(
 const Chart = () => {
     // fetch world space api data
     const [chart, setChart] = useState([]);
+    
     useEffect(() => {
       fetch('http://localhost:4005/carbon?user=ecogamer')
           .then((response) => response.json())
@@ -30,62 +31,66 @@ const Chart = () => {
           });
     }, []);
 
+    
+
     return (
       <div>
-        <div style={{width: 700, height: 300}}>
-        <Line
-            data= {{
-                //labels: ['Sun', 'Mon', 'Tues', 'Weds', 'Thurs', 'Fri', 'Sat'],
-                labels: chart.chart_data?.map(x => x.hour_ending),
-                datasets: [{
-                    //data: [100, 45, 19, 3, 5, 20, 10],
-                    data: chart.chart_data?.map(x => x.average_watts),
-                    backgroundColor: ['white'],
-                    borderColor: ['#00cb8d'],
-                    pointBorderColor: ['white'],
-                    drawBorder: false,
-                    }
-                ]
-            }}
-            options={{
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                  y: {
-                      grid: {
-                        display: false
-                      },
-                      border: {
-                        display: false
-                      },
-                      ticks: {
-                        color: 'white'
-                      },
-                      title: {
-                        display: true,
-                        text: 'Avg Watts',
-                        color: ['orange']
+        <div style={{position: 'relative', width: 730, height: 300, margin: 'auto'}}>
+          <Line
+              data= {{
+                  labels: chart.chart_data?.map(x => x.hour_ending),
+                  //labels: chart.chart_data?.map(x => x.hour_ending.substring(0, 10)),
+                  //labels: ['2023-02-16', '2023-02-17', '2023-02-18', '2023-02-19', '2023-02-20'],
+                  datasets: [{
+                      //data: [130, 145, 154, 140, 116],
+                      data: chart.chart_data?.map(x => x.average_watts),
+                      backgroundColor: ['white'],
+                      borderColor: ['#00cb8d'],
+                      pointBorderColor: ['white'],
+                      drawBorder: false,
+                      lineTension: 0.4
                       }
-                    },
-                  x:{
-                      grid: {
-                        display: false
-                      },
-                      border: {
-                        display: false
-                      },
-                      ticks: {
-                        color: 'white'
-                      }
-                    }
-                },
-                legend: {
-                  labels: {
-                    fontSize: 25,
-                  },
-                },
+                  ]
               }}
-        ></Line>
+              options={{
+                  responsive: true,
+                  maintainAspectRatio: false,
+                  scales: {
+                    y: {
+                        grid: {
+                          display: false
+                        },
+                        border: {
+                          display: false
+                        },
+                        ticks: {
+                          color: 'white'
+                        },
+                        title: {
+                          display: true,
+                          text: 'Avg Watts',
+                          color: ['orange']
+                        }
+                      },
+                    x:{
+                        grid: {
+                          display: false
+                        },
+                        border: {
+                          display: false
+                        },
+                        ticks: {
+                          color: 'white'
+                        }
+                      }
+                  },
+                  legend: {
+                    labels: {
+                      fontSize: 25,
+                    },
+                  },
+                }}
+          ></Line>
         </div>
       </div>
     )

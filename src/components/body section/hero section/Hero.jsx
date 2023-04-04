@@ -40,8 +40,7 @@ const Hero = () => {
             <div className="overviewSection flex"> 
              
                 <div className="leftOverview">
-                    {/*<div className="title">Consumption Overview <span className="days">(Last 5 Days)</span></div>*/}
-                    <div className="title">Consumption Overview <span className="days">(WTD)</span></div>
+                    <div className="title">Consumption Overview <span className="days">(Last 5 Days)</span></div>
                     <div className="scoreContainer flex">
                         <div className="singleItem">
                             <h3>Readout</h3>

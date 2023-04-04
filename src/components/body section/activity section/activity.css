@@ -42,12 +42,8 @@
   color: var(--brightGreen);
 }
 .activitySection .overviewSection .leftOverview .chart_container {
-  position: relative;
-  height: 400px;
   width: 800px;
-  display: flex;
-  align-items: center;
-  padding: 2rem;
+  margin-top: 3rem;
 }
 .activitySection .overviewSection .rightOverview .title {
   color: var(--whiteColor);

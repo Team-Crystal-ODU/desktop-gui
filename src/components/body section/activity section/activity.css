@@ -21,31 +21,33 @@
 }
 
 .activitySection {
-  margin-top: 5rem;
+  margin-top: 0.5rem;
   margin-bottom: 5rem;
 }
 .activitySection .overviewSection {
   justify-content: space-between;
 }
-.activitySection .overviewSection .leftOverview .title {
-  color: var(--whiteColor);
-  margin: 1rem;
-  margin-bottom: 3rem;
-  font-weight: 600;
-}
-.activitySection .overviewSection .leftOverview .title .days {
-  color: var(--brightGreen);
-}
-.activitySection .overviewSection .leftOverview .chartContainer {
-  position: relative;
-  height: 220px;
-  width: 855px;
-  display: flex;
-  align-items: center;
+.activitySection .overviewSection .leftOverview {
   margin: 1rem;
   padding: 2rem;
   border-radius: 25px;
-  background-color: var(--PrimaryColor);
+  border: 3px solid var(--greenColor);
+}
+.activitySection .overviewSection .leftOverview .chart_title {
+  /*color: var(--whiteColor);
+  margin: 1rem;
+  margin-bottom: 3rem;
+  font-weight: 600;*/
+  font-size: var(--normalFontSize);
+  color: var(--brightGreen);
+}
+.activitySection .overviewSection .leftOverview .chart_container {
+  position: relative;
+  height: 400px;
+  width: 800px;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
 }
 .activitySection .overviewSection .rightOverview .title {
   color: var(--whiteColor);

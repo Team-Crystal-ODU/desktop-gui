@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import './chart.css';
 import { Line } from 'react-chartjs-2';
 import {
     Chart as ChartJS,
@@ -33,6 +32,7 @@ const Chart = () => {
 
     return (
       <div>
+        <div style={{width: 700, height: 300}}>
         <Line
             data= {{
                 //labels: ['Sun', 'Mon', 'Tues', 'Weds', 'Thurs', 'Fri', 'Sat'],
@@ -85,8 +85,8 @@ const Chart = () => {
                   },
                 },
               }}
-
         ></Line>
+        </div>
       </div>
     )
   }

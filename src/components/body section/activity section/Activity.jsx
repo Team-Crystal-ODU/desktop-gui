@@ -28,9 +28,8 @@ const Activity = () => {
         <div className="activitySection">
             <div className="overviewSection flex">
                 <div className="leftOverview">
-                    {/*<div className="title">Energy Usage <span className="days">(Last 5 Days)</span></div>*/}
-                    <div className="title">Energy Usage <span className="days">(WTD)</span></div>
-                    <div className="chartContainer">
+                    <h3 className="chart_title">Daily Energy Usage</h3>
+                    <div className="chart_container">
                         <Chart />
                     </div>
                 </div>

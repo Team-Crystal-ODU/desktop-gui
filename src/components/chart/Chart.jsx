@@ -49,7 +49,7 @@ const Chart = () => {
             }}
             options={{
                 responsive: true,
-                maintainAspectRatio: true,
+                maintainAspectRatio: false,
                 scales: {
                   y: {
                       grid: {

@@ -2,6 +2,7 @@ import './App.css';
 import Body from './components/body section/Body';
 import Login from './components/login section/Login';
 import Register from "./components/login section/Register";
+import Chart from "./components/chart/Chart";
 
 import { Routes, Route } from 'react-router-dom';
 import RSS from './components/news section/News';

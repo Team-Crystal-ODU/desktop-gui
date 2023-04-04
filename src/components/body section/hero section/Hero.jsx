@@ -3,13 +3,15 @@ import './hero.css';
 import Chart from '../../chart/Chart';
 
 // Image Imports ============>
-import img2 from '../../../Assets/graph.png';
 
 // Earth Imports ============>
 import styled from "styled-components";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { Earth } from "../earth section/Earth";
+
+// Imported Icons ============>
+import { AiFillCaretUp } from 'react-icons/ai';
 
 
 const Hero = () => {
@@ -38,29 +40,39 @@ const Hero = () => {
             <div className="overviewSection flex"> 
              
                 <div className="leftOverview">
-                    <div className="title">Consumption Overview <span className="days">(Last 5 Days)</span></div>
+                    {/*<div className="title">Consumption Overview <span className="days">(Last 5 Days)</span></div>*/}
+                    <div className="title">Consumption Overview <span className="days">(WTD)</span></div>
                     <div className="scoreContainer flex">
                         <div className="singleItem">
-                            <span className="score">{users.co2}</span>
-                            <div>
-                                <h3>Readout</h3>
-                                <p className="units">Total lbs of CO<sub>2</sub></p>
+                            <h3>Readout</h3>
+                            <div className="readout_text">
+                                <span className="score">{users.co2}</span>
+                                <div className="readout_subtext">
+                                    <p className="units">Total lbs of CO<sub>2</sub></p>
+                                    <AiFillCaretUp className="icon" />
+                                </div>
                             </div>
                         </div>
 
                         <div className="singleItem">
-                            <span className="score">{users.miles_driven}</span>
-                            <div>
-                                <h3>Driven Equivalent</h3>
-                                <p className="units">Total miles driven</p>
+                            <h3>Driven Equivalent</h3>
+                            <div className="readout_text">
+                                <span className="score">{users.miles_driven}</span>
+                                <div className="readout_subtext">
+                                    <p className="units">Total miles driven</p>
+                                    <AiFillCaretUp className="icon" />
+                                </div>
                             </div>
                         </div>
 
                         <div className="singleItem">
-                            <span className="score">{users.watt_hours}</span>
-                            <div>
-                                <h3>Watt Hours</h3>
-                                <p className="units">Total watt-hours</p>
+                            <h3>Watt Hours</h3>
+                            <div className="readout_text">
+                                <span className="score">{users.watt_hours}</span>
+                                <div className="readout_subtext">
+                                    <p className="units">Total watt-hours</p>
+                                    <AiFillCaretUp className="icon" />
+                                </div>
                             </div>
                         </div>
                     </div>

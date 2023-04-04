@@ -36,9 +36,6 @@
 .activitySection .overviewSection .leftOverview .title .days {
   color: var(--brightGreen);
 }
-.activitySection .overviewSection .leftOverview h5 {
-  margin: 0 1rem 2rem 1rem;
-}
 .activitySection .overviewSection .leftOverview .chartContainer {
   position: relative;
   height: 220px;

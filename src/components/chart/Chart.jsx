@@ -5,14 +5,16 @@ import {
     LineElement,
     CategoryScale, //x axis
     LinearScale, //y axis
-    PointElement
+    PointElement,
+    Tooltip
 } from 'chart.js';
 
 ChartJS.register(
     LineElement,
     CategoryScale, 
     LinearScale,
-    PointElement
+    PointElement,
+    Tooltip
 )
 
 const Chart = () => {
@@ -31,11 +33,9 @@ const Chart = () => {
           });
     }, []);
 
-    
-
     return (
       <div>
-        <div style={{position: 'relative', width: 730, height: 300, margin: 'auto'}}>
+        <div className="ctx" style={{position: 'relative', width: 730, height: 300, margin: 'auto'}}>
           <Line
               data= {{
                   labels: chart.chart_data?.map(x => x.hour_ending),
@@ -70,6 +70,9 @@ const Chart = () => {
                           display: true,
                           text: 'Avg Watts',
                           color: ['orange']
+                        },
+                        tooltip: {
+                          enabled: true
                         }
                       },
                     x:{
@@ -81,14 +84,16 @@ const Chart = () => {
                         },
                         ticks: {
                           color: 'white'
-                        }
+                        },
+                        min: 0,
+                        max: 23
                       }
                   },
                   legend: {
                     labels: {
                       fontSize: 25,
                     },
-                  },
+                  }
                 }}
           ></Line>
         </div>

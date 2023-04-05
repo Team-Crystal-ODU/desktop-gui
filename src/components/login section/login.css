@@ -20,6 +20,11 @@
   --smallestFontSize: .75rem;
 }
 
+.auth-form-container {
+  position: relative;
+  top: 20%;
+  height: 600px;
+}
 .auth-form-container .login-form, .auth-form-container .register-form {
   display: flex;
   flex-direction: column;

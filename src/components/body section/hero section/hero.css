@@ -91,11 +91,13 @@
 .heroSection .overviewSection .rightOverview {
   padding: 1rem;
   margin: 1rem;
+  margin-bottom: 0;
   text-align: center;
   color: var(--whiteColor);
 }
 .heroSection .overviewSection .rightOverview .title {
   font-weight: 600;
+  margin-top: 1rem;
 }
 .heroSection .overviewSection .rightOverview .earth {
   height: 250px;

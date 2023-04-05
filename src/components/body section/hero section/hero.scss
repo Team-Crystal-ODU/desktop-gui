@@ -104,11 +104,13 @@
         .rightOverview {
             padding: 1rem;
             margin: 1rem;
+            margin-bottom: 0;
             text-align: center;
             color: var(--whiteColor);
 
             .title {
                 font-weight: 600;
+                margin-top: 1rem;
             }
 
             .earth {

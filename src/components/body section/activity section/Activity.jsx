@@ -34,15 +34,24 @@ const Activity = () => {
                     </div>
                 </div>
                 <div className="rightOverview">
-                    <div className="title">Recent Usage</div>
-                    <div className="singleItem">
-                        <h3>CPU Watts 22</h3>
+                    <div className="game">
+                        <h3 className="game_header">Recently Played</h3>
+                        {/*<div className="game_image"><img src={img1}></img></div>*/}
+                        <div className="title_container">
+                            <h3 className="game_title">Call of Duty</h3> 
+                            <p className="game_subtitle">Black Ops</p>
+                        </div>
                     </div>
 
                     <div className="singleItem">
-                        <h3>GPU Watts 49</h3>
+                        <h3>CPU Watts</h3>
+                        <div className="watts">22</div>
                     </div>
 
+                    <div className="singleItem">
+                        <h3>GPU Watts</h3>
+                        <div className="watts">49</div>
+                    </div>
                 </div>
             </div>
         </div>

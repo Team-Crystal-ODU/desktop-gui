@@ -1,15 +1,21 @@
-import React from "react";
-import './top.css';
+import React, { useState } from "react"
+import './top.css'
 
 // Imported Icons ==================>
-import {HiOutlineSearch} from 'react-icons/hi';
-import {MdOutlineNotificationsNone} from 'react-icons/md';
+import {HiOutlineSearch} from 'react-icons/hi'
+import {MdOutlineNotificationsNone} from 'react-icons/md'
+import {RxCaretDown} from 'react-icons/rx'
+import {CiLogout} from 'react-icons/ci'
+import {CgProfile} from 'react-icons/cg'
 
 // Imported Images ==================>
-import logo from '../../../Assets/logo.png';
-import img from '../../../Assets/user.jpeg';
+import logo from '../../../Assets/logo.png'
+import img from '../../../Assets/user.jpeg'
 
 const Top = () => {
+    const [open, setOpen] = useState(false)
+    console.log(open)
+
     return (
         <div className="topSection">
             <div className="headerSection flex">
@@ -27,14 +33,29 @@ const Top = () => {
 
                 <div className="adminDiv flex">
                     <MdOutlineNotificationsNone className="icon" />
-                    <div className="adminImage">
-                        <img src={img} alt="" />
+                    <div className="admin-container flex" onClick={() => {setOpen(!open)}}>
+                        <div className="adminImage"><img src={img} alt="" /></div>
+                        <div className="adminName">Hi, Stacey</div>
+                        <RxCaretDown className="icon"/>
                     </div>
-                    <a href="/">Hi, Stacey</a>
-                    {/*<a href="/login">Logout</a>*/}
+                    <div class={`dropdown-menu ${open? 'active' : 'inactive'}`}>
+                        <ul>
+                            <DropdownItem img={logo} text={'My Profile'}/>
+                            <DropdownItem img={logo} text={'Logout'}/>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+    );
+}
+
+function DropdownItem(props) {
+    return (
+        <li className="dropdownItem">
+            <img src={props.img}></img>
+            <a>{props.text}</a>
+        </li>
     );
 }
 

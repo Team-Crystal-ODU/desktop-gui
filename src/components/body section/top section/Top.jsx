@@ -40,22 +40,19 @@ const Top = () => {
                     </div>
                     <div class={`dropdown-menu ${open? 'active' : 'inactive'}`}>
                         <ul>
-                            <DropdownItem img={logo} text={'My Profile'}/>
-                            <DropdownItem img={logo} text={'Logout'}/>
+                            <li className="dropdownItem">
+                                <CgProfile />
+                                <a href="">My Profile</a>
+                            </li>
+                            <li className="dropdownItem">
+                                <CiLogout />
+                                <a href="/">Log Out</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-    );
-}
-
-function DropdownItem(props) {
-    return (
-        <li className="dropdownItem">
-            <img src={props.img}></img>
-            <a>{props.text}</a>
-        </li>
     );
 }
 

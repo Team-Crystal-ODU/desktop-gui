@@ -117,19 +117,17 @@
                 z-index: 1;
 
                 .dropdownItem {
-                    padding: 10px 0;
-                    //border-top: 1px solid rgba(0, 0, 0, 0.05);
                     display: flex;
+                    padding: 10px 0;
                     margin: 10px auto;
 
-                    img {
+                    /*img {
                         max-width: 20px;
                         margin-right: 10px;
                         //opacity: 0.5;
                         transition: 0.5s ease;
                         font-size: 50px;
-                        border-color: black;
-                    }
+                    }*/
 
                     a {
                         max-width: 200px;

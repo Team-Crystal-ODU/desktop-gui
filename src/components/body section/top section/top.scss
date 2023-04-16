@@ -76,7 +76,6 @@
                 font-size: var(--biggestFontSize);
                 border-radius: 5px;
                 padding: 5px;
-                //color: var(--whiteColor);
             }
 
             .admin-container {
@@ -120,14 +119,6 @@
                     display: flex;
                     padding: 10px 0;
                     margin: 10px auto;
-
-                    /*img {
-                        max-width: 20px;
-                        margin-right: 10px;
-                        //opacity: 0.5;
-                        transition: 0.5s ease;
-                        font-size: 50px;
-                    }*/
 
                     a {
                         max-width: 200px;

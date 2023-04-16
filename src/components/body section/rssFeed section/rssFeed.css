@@ -26,20 +26,24 @@
 }
 .rssFeedSection .singleItem {
   position: relative;
-  height: 200px;
-  width: 250px;
+  height: 250px;
+  width: 280px;
   align-items: center;
   margin: 1rem;
-  padding: 2rem;
   border-radius: 24px;
   background-color: var(--PrimaryColor);
 }
-.rssFeedSection .singleItem h3 {
-  font-size: var(--normalFontSize);
-  color: var(--blackColor);
-  padding: 1rem 0;
+.rssFeedSection .singleItem .image {
+  margin-bottom: 1rem;
+  border-radius: 15px 15px 0 0;
 }
-.rssFeedSection .singleItem p {
-  position: absolute;
-  bottom: 25%;
+.rssFeedSection .singleItem .date {
+  margin: 0 2rem;
+  font-size: var(--smallestFontSize);
+  color: var(--whiteColor);
+}
+.rssFeedSection .singleItem .title {
+  font-size: var(--normalFontSize);
+  color: var(--whiteColor);
+  margin: 0.5rem 2rem 1rem 2rem;
 }/*# sourceMappingURL=rssFeed.css.map */

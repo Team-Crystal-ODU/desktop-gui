@@ -17,14 +17,15 @@ import {IoIosArrowBack} from 'react-icons/io';
 
 
 const Body = () => {
-    const [articles, setArticles] = useState([]);
+    const [articles, setArticles] = useState([])
 
     const getArticles = async () => {
         try {
         const res = await axios.get("http://localhost:4000/")
-        setArticles(res.data);
+        setArticles(res.data)
+        console.log(articles)
         } catch (error) {
-        console.log(error);
+        console.log(error)
         }
     }
 
@@ -45,8 +46,9 @@ const Body = () => {
                         {articles.map((item, i) =>
                             <RssFeed 
                                 key={i}
-                                title={item.item.title.substring(0, 35)}
+                                image={item.item.content.substring(43, 162)}
                                 date={item.item.pubDate.substring(0, 16)}
+                                title={item.item.title.substring(0, 38)}
                             />
                         )}
                     </a> 

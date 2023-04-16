@@ -33,6 +33,7 @@ const Activity = () => {
                         <Chart />
                     </div>
                 </div>
+                
                 <div className="rightOverview">
                     <div className="game">
                         <h3 className="game_header">Recently Played</h3>

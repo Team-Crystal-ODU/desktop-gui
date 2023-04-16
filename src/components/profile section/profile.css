@@ -1,0 +1,48 @@
+:root {
+  --PrimaryColor: #4a717b;
+  --HoverColor: #bdf094;
+  --brightGreen: #00cb8d;
+  --paleGreen: hsl(192,40%,90%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --bgColor: hsl(193,100%,13%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  --greenColor: hsl(184,100%,16%);
+  /* Font and typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.profileContainer {
+  width: 100%;
+}
+.profileContainer .contentWrapper {
+  width: 82%;
+  color: var(--whiteColor);
+  justify-content: space-around;
+  padding: 5rem;
+  margin: 5rem auto;
+}
+.profileContainer .contentWrapper .content {
+  width: 600px;
+}
+.profileContainer .contentWrapper .content h1 {
+  margin-bottom: 2rem;
+}
+.profileContainer .contentWrapper .content input {
+  margin: 10px 0;
+  border-radius: 20px;
+  border: 3px solid var(--greenColor);
+  height: 50px;
+  width: 600px;
+}
+.profileContainer .contentWrapper img {
+  width: 100px;
+}/*# sourceMappingURL=profile.css.map */

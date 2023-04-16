@@ -42,7 +42,7 @@ const Top = () => {
                         <ul>
                             <li className="dropdownItem">
                                 <CgProfile />
-                                <a href="">My Profile</a>
+                                <a className="" href="/profile">My Profile</a>
                             </li>
                             <li className="dropdownItem">
                                 <CiLogout />

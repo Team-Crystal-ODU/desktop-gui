@@ -17,15 +17,14 @@ import {IoIosArrowBack} from 'react-icons/io';
 
 
 const Body = () => {
-    const [articles, setArticles] = useState([])
+    const [articles, setArticles] = useState([]);
 
     const getArticles = async () => {
         try {
         const res = await axios.get("http://localhost:4000/")
-        setArticles(res.data)
-        console.log(articles)
+        setArticles(res.data);
         } catch (error) {
-        console.log(error)
+        console.log(error);
         }
     }
 
@@ -42,13 +41,15 @@ const Body = () => {
                 <a classname="newsTitle" href="/news">Eco News</a>
                 <div className="scrollContainer flex">
                     <IoIosArrowBack className="icon" />
-                    <a className="newsBlock" href="/news">
+                    <a className="newsBlock">
                         {articles.map((item, i) =>
                             <RssFeed 
                                 key={i}
-                                image={item.item.content.substring(43, 162)}
+                                title={item.item.title.substring(0, 35)}
+                                link = {item.item.link}
                                 date={item.item.pubDate.substring(0, 16)}
-                                title={item.item.title.substring(0, 38)}
+                                content = {item.item.contentSnippet.substring(0, 16)}
+                                
                             />
                         )}
                     </a> 

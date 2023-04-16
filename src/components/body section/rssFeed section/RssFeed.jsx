@@ -1,14 +1,15 @@
 import React from "react";
 import './rssFeed.css';
 
-const RssFeed = ({ image, title, date }) => {
+const RssFeed = ({ image, title, date, link }) => {
     return (
         <div className="rssFeedSection">
-            <div className="singleItem">
-                {/*<img src="https://i0.wp.com/yaleclimateconnections.org/wp-content/uploads/2023/04/423_treedamage_1600.jpg?fit=300%2C169&amp;ssl=1" alt="">{image}</img>*/}
+            <div className="singleItem" >
                 <img className="image" src={image}></img>
                 <p className="date">{date}</p>
-                <h3 className="title">{title}... <span>Read More</span></h3>
+                <a className="title" href ={link} target = "_blank"
+                    rel= "noopener noreferrer">{title}... <span>Read More</span></a>
+                
             </div>
         </div>  
     )

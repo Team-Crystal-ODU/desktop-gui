@@ -7,8 +7,8 @@ const RssFeed = ({ image, title, date, link }) => {
             <div className="singleItem" >
                 <img className="image" src={image}></img>
                 <p className="date">{date}</p>
-                <a className="title" href ={link} target = "_blank"
-                    rel= "noopener noreferrer">{title}... <span>Read More</span></a>
+                <h3 className="title" >{title}... <a href ={link} target = "_blank"
+                    rel= "noopener noreferrer">Read More</a></h3>
                 
             </div>
         </div>  

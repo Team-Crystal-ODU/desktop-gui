@@ -1,11 +1,17 @@
-import React, { useRef, useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import './login.css';
+import React, { useRef, useState, useEffect, useContext } from "react"
+import { useNavigate } from "react-router-dom"
+import './login.css'
+import AuthContext from "../../context/AuthProvider"
+import axios from "../../api/axios"
+
+// confirm this later
+const LOGIN_URL = 'http://localhost:4005/carbon?user=ecogamer'
 
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 
 export const Login = () => {
+    const { setAuth } = useContext(AuthContext)
     const userRef = useRef();
     const errRef = useRef();
 
@@ -55,6 +61,46 @@ export const Login = () => {
         setSuccess(true);
         navigate("/home");
     }
+
+    {/*const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const v1 = USER_REGEX.test(user);
+            const v2 = PWD_REGEX.test(pwd);
+            if (!v1 || !v2) {
+                setErrMsg("Invalid Entry");
+                return;
+            }
+            const response = await axios.post(LOGIN_URL,
+                JSON.stringify({ user, pwd }),
+                {
+                    headers: { 'Content-Type': 'application/json' },
+                    withCredentials: true
+                }
+            );
+            console.log(JSON.stringify(response?.data));
+            //console.log(JSON.stringify(response));
+            const accessToken = response?.data?.accessToken;
+            const roles = response?.data?.roles;
+            setAuth({ user, pwd, roles, accessToken });
+            setUser('');
+            setPwd('');
+            setSuccess(true);
+            navigate("/home");
+        } catch (err) {
+            if (!err?.response) {
+                setErrMsg('No Server Response');
+            } else if (err.response?.status === 400) {
+                setErrMsg('Missing Username or Password');
+            } else if (err.response?.status === 401) {
+                setErrMsg('Unauthorized');
+            } else {
+                setErrMsg('Login Failed');
+            }
+            errRef.current.focus();
+        }
+    }*/}
 
     return (
         <>

@@ -13,6 +13,7 @@ const Activity = () => {
      const [watts, setWatts] = useState([]);
      useEffect(() => {
         fetch('http://localhost:4005/carbon?user=ecogamer')
+        //fetch('http://172.18.12.16:6000/game?user=ecogamer')
            .then((response) => response.json())
            .then((data) => {
               console.log(data);

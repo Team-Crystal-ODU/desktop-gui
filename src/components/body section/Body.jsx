@@ -45,11 +45,10 @@ const Body = () => {
                         {articles.map((item, i) =>
                             <RssFeed 
                                 key={i}
-                                title = {item.item.title.substring(0, 38)}
                                 image = {item.item.content.substring(43,162)}
-                                link = {item.item.link}
                                 date = {item.item.pubDate.substring(0, 16)}
-                                
+                                title = {item.item.title.substring(0, 38)}
+                                link = {item.item.link}  
                             />
                         )}
                     </a> 

@@ -29,28 +29,56 @@
         color: var(--whiteColor);
         justify-content: space-around;
         padding: 5rem;
-        //background-color: red;
         margin: 5rem auto;
 
         .content {
-            width: 600px;
-            //background-color: yellow;
+            width: 400px;
 
             h1 {
                 margin-bottom: 2rem;
             }
 
+            p {
+                margin-top: 1rem;
+            }
+
             input {
                 margin: 10px 0;
-                border-radius: 20px;
+                border-radius: 15px;
                 border: 3px solid var(--greenColor);
                 height: 50px;
-                width: 600px;
+                width: 400px;
+                padding: 1rem;
+            }
+
+            .pic_input {
+                width: 300px;
+                border-radius: 15px 0 0 15px;
+            }
+
+            .update, .browse {
+                margin-top: 1rem;
+                padding: 0.5rem 1rem;
+                background-color: var(--PrimaryColor);
+                color: white;
+                border-radius: 10px;
+                border: none;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .browse {
+                border-radius: 0 15px 15px 0;
+                height: 47px;
+                width: 100px;
             }
         }
 
-        img {
-            width: 100px;
+        .image {
+            width: 380px;
+            border-radius: 50%;
+            font-size: 400px;
+            border: 3px solid var(--whiteColor);
         }
     }
 }

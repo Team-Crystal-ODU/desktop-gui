@@ -23,7 +23,7 @@
                 //container with all sub news blocks
                 display: grid;
                 grid-auto-flow: column;
-                grid-auto-columns: 24%;
+                grid-auto-columns: 24.5%;
                 gap: 1rem;
                 margin: 2rem 0;
                 overflow-x: auto;
@@ -32,7 +32,7 @@
             .icon {
                 position: relative;
                 color: var(--whiteColor);
-                font-size: 250px;
+                font-size: 90px;
                 top: 50%;
             }
         }

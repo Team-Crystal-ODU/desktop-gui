@@ -31,18 +31,44 @@
   margin: 5rem auto;
 }
 .profileContainer .contentWrapper .content {
-  width: 600px;
+  width: 400px;
 }
 .profileContainer .contentWrapper .content h1 {
   margin-bottom: 2rem;
 }
+.profileContainer .contentWrapper .content p {
+  margin-top: 1rem;
+}
 .profileContainer .contentWrapper .content input {
   margin: 10px 0;
-  border-radius: 20px;
+  border-radius: 15px;
   border: 3px solid var(--greenColor);
   height: 50px;
-  width: 600px;
+  width: 400px;
+  padding: 1rem;
 }
-.profileContainer .contentWrapper img {
+.profileContainer .contentWrapper .content .pic_input {
+  width: 300px;
+  border-radius: 15px 0 0 15px;
+}
+.profileContainer .contentWrapper .content .update, .profileContainer .contentWrapper .content .browse {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--PrimaryColor);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.profileContainer .contentWrapper .content .browse {
+  border-radius: 0 15px 15px 0;
+  height: 47px;
   width: 100px;
+}
+.profileContainer .contentWrapper .image {
+  width: 380px;
+  border-radius: 50%;
+  font-size: 400px;
+  border: 3px solid var(--whiteColor);
 }/*# sourceMappingURL=profile.css.map */

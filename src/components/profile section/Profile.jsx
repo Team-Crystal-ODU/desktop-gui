@@ -1,10 +1,20 @@
 import './profile.css'
+import React, { useState, useEffect } from "react"
 import Top from "../body section/top section/Top"
 
 // Imported Images ============>
-import img from '../../Assets/logo.png'
+import user from '../../Assets/user2.jpg'
+
+// Imported Icons ============>
+import {FaUserCircle} from 'react-icons/fa'
+import {HiUserCircle} from 'react-icons/hi'
 
 const Profile = () => {
+    const [name, setName] = useState("");
+    const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
+    const [pic, setPic] = useState();
+    const [picMessage, setPicMessage] = useState();
 
     return (
         <div className="profileContainer">
@@ -13,15 +23,17 @@ const Profile = () => {
                 <div className='content'>
                     <h1>Edit Profile</h1>
                     <p>User Name</p>
-                    <input className='name_input'></input>
+                    <input type="text" placeholder="User Name" className='username_input'></input>
                     <p>Password</p>
-                    <input className='name_input'></input>
+                    <input type="text" placeholder="********" className='password_input'></input>
                     <p>Confirm Password</p>
-                    <input className='name_input'></input>
+                    <input type="text" placeholder="********" className='password_input'></input>
                     <p>Change Profile Picture</p>
-                    <input className='name_input'></input>
+                    <input type="text" placeholder="Upload Profile Picture" className='pic_input'></input>
+                    <button className='browse'>Browse</button>
+                    <button className='update'>Update</button>
                 </div>
-                <img src={img} alt=''></img>
+                <img className="image" src={user} alt=''></img>
             </div>
         </div>
     );

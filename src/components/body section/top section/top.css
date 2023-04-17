@@ -29,12 +29,10 @@
   width: 82%;
   margin: auto;
 }
-.topSection .headerSection .title img {
-  max-width: 20px;
+.topSection .headerSection .title .image {
+  font-size: 25px;
+  color: var(--whiteColor);
   margin-right: 1rem;
-  background: var(--inputColor);
-  border-radius: 2px;
-  padding: 0.2rem;
 }
 .topSection .headerSection .title h1 {
   font-size: var(--h1FontSize);
@@ -82,7 +80,7 @@
   height: 3rem;
   overflow: hidden;
 }
-.topSection .headerSection .adminDiv .admin-container .adminImage img {
+.topSection .headerSection .adminDiv .admin-container .adminImage .image {
   width: 100%;
   height: 100%;
   border-radius: 10px;

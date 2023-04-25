@@ -32,13 +32,13 @@
   padding: 2rem;
   border-radius: 25px;
   border: 3px solid var(--greenColor);
+  width: 100%;
 }
 .activitySection .overviewSection .leftOverview .chart_title {
   font-size: var(--normalFontSize);
   color: var(--brightGreen);
 }
 .activitySection .overviewSection .leftOverview .chart_container {
-  width: 800px;
   margin-top: 3rem;
 }
 .activitySection .overviewSection .rightOverview .title {

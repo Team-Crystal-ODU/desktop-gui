@@ -33,6 +33,7 @@
             padding: 2rem;
             border-radius: 25px;
             border: 3px solid var(--greenColor);
+            width: 100%;
             
             .chart_title {
                 font-size: var(--normalFontSize);
@@ -40,7 +41,7 @@
             }
 
             .chart_container {
-                width: 800px;
+                //width: 800px;
                 margin-top: 3rem;
             }
         }

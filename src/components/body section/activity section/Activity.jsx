@@ -35,10 +35,10 @@ const Activity = () => {
                     </div>
                 </div>
                 
-                <div className="rightOverview">
+                {/*<div className="rightOverview">
                     <div className="game">
                         <h3 className="game_header">Recently Played</h3>
-                        {/*<div className="game_image"><img src={img1}></img></div>*/}
+                        {/*<div className="game_image"><img src={img1}></img></div>*
                         <div className="title_container">
                             <h3 className="game_title">Call of Duty</h3> 
                             <p className="game_subtitle">Black Ops</p>
@@ -54,7 +54,7 @@ const Activity = () => {
                         <h3>GPU Watts</h3>
                         <div className="watts">49</div>
                     </div>
-                </div>
+                </div>*/}
             </div>
         </div>
     );

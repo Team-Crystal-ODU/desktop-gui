@@ -35,7 +35,8 @@ const Chart = () => {
 
     return (
       <div>
-        <div className="ctx" style={{position: 'relative', width: 730, height: 300, margin: 'auto'}}>
+        {/*<div className="ctx" style={{position: 'relative', width: 730, height: 300, margin: 'auto'}}>*/}
+        <div className="ctx" style={{position: 'relative', width: 1200, height: 300, margin: 'auto'}}>
           <Line
               data= {{
                   labels: chart.chart_data?.map(x => x.hour_ending),
@@ -43,25 +44,35 @@ const Chart = () => {
                   //labels: ['2023-02-16', '2023-02-17', '2023-02-18', '2023-02-19', '2023-02-20'],
                   datasets: [{
                       //data: [130, 145, 154, 140, 116],
+                      label: 'Dataset 1',
                       data: chart.chart_data?.map(x => x.average_watts),
                       backgroundColor: ['white'],
                       borderColor: ['#00cb8d'],
                       pointBorderColor: ['white'],
                       drawBorder: false,
-                      lineTension: 0.4
+                      lineTension: 0.4,
+                      yAxisID: 'y',
+                      },
+                      {
+                        label: 'Dataset 2',
+                        data: [130, 145, 154, 140, 116],
+                        borderColor: ['orange'],
+                        backgroundColor: ['white'],
+                        yAxisID: 'y1',
                       }
                   ]
               }}
+
               options={{
                   responsive: true,
                   maintainAspectRatio: false,
                   scales: {
                     y: {
                         grid: {
-                          display: false
+                          display: true
                         },
                         border: {
-                          display: false
+                          display: true
                         },
                         ticks: {
                           color: 'white'
@@ -74,6 +85,26 @@ const Chart = () => {
                         tooltip: {
                           enabled: true
                         }
+                      },
+                      y1: {
+                        grid: {
+                          display: false
+                        },
+                        border: {
+                          display: true
+                        },
+                        ticks: {
+                          color: 'white'
+                        },
+                        title: {
+                          display: true,
+                          text: 'Avg Watts',
+                          color: ['orange']
+                        },
+                        tooltip: {
+                          enabled: true
+                        },
+                        position: 'right'
                       },
                     x:{
                         grid: {

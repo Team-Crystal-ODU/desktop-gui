@@ -5,7 +5,7 @@ import AuthContext from "../../context/AuthProvider"
 import axios from "../../api/axios"
 
 // confirm this later
-const LOGIN_URL = 'http://localhost:4005/carbon?user=ecogamer'
+const LOGIN_URL = 'http://localhost:4005/auth'
 
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
@@ -46,6 +46,7 @@ export const Login = () => {
         setErrMsg('');
     }, [user, pwd])
 
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         const v1 = USER_REGEX.test(user);
@@ -62,6 +63,8 @@ export const Login = () => {
         navigate("/home");
     }
 
+   
+
     {/*const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -73,7 +76,7 @@ export const Login = () => {
                 return;
             }
             const response = await axios.post(LOGIN_URL,
-                JSON.stringify({ user, pwd }),
+                JSON.stringify({ user, password: pwd }),
                 {
                     headers: { 'Content-Type': 'application/json' },
                     withCredentials: true

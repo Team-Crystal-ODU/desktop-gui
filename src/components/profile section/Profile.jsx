@@ -25,9 +25,9 @@ const Profile = () => {
                     <p>User Name</p>
                     <input type="text" placeholder="User Name" className='username_input'></input>
                     <p>Password</p>
-                    <input type="text" placeholder="********" className='password_input'></input>
+                    <input type="password" placeholder="********" className='password_input'></input>
                     <p>Confirm Password</p>
-                    <input type="text" placeholder="********" className='password_input'></input>
+                    <input type="password" placeholder="********" className='password_input'></input>
                     <p>Change Profile Picture</p>
                     <input type="text" placeholder="Upload Profile Picture" className='pic_input'></input>
                     <button className='browse'>Browse</button>

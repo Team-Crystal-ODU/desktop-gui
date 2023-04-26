@@ -29,7 +29,7 @@ const Activity = () => {
         <div className="activitySection">
             <div className="overviewSection flex">
                 <div className="leftOverview">
-                    <h3 className="chart_title">Daily Energy Usage</h3>
+                    <h3 className="chart_title">Hourly Energy Usage</h3>
                     <div className="chart_container">
                         <Chart />
                     </div>

@@ -35,27 +35,27 @@ const Chart = () => {
 
     return (
       <div>
-        {/*<div className="ctx" style={{position: 'relative', width: 730, height: 300, margin: 'auto'}}>*/}
         <div className="ctx" style={{position: 'relative', width: 1200, height: 300, margin: 'auto'}}>
           <Line
               data= {{
-                  labels: chart.chart_data?.map(x => x.hour_ending),
-                  //labels: chart.chart_data?.map(x => x.hour_ending.substring(0, 10)),
                   //labels: ['2023-02-16', '2023-02-17', '2023-02-18', '2023-02-19', '2023-02-20'],
+                  //labels: chart.chart_data?.map(x => x.hour_ending),
+                  //labels: chart.chart_data?.map(x => x.hour_ending.substring(5, 16)),
+                  labels: chart.chart_data?.map(x => x.activity),
                   datasets: [{
-                      //data: [130, 145, 154, 140, 116],
-                      label: 'Dataset 1',
-                      data: chart.chart_data?.map(x => x.average_watts),
-                      backgroundColor: ['white'],
-                      borderColor: ['#00cb8d'],
-                      pointBorderColor: ['white'],
-                      drawBorder: false,
-                      lineTension: 0.4,
-                      yAxisID: 'y',
+                        label: 'Average Watts',
+                        data: chart.chart_data?.map(x => x.average_watts),
+                        backgroundColor: ['white'],
+                        borderColor: ['#00cb8d'],
+                        pointBorderColor: ['white'],
+                        drawBorder: false,
+                        lineTension: 0.4,
+                        stepped: true,
+                        yAxisID: 'y',
                       },
                       {
-                        label: 'Dataset 2',
-                        data: [130, 145, 154, 140, 116],
+                        label: '% From Fossil Fuels',
+                        data: chart.chart_data?.map(x => x.perc_from_fossil_fuels),
                         borderColor: ['orange'],
                         backgroundColor: ['white'],
                         yAxisID: 'y1',
@@ -66,6 +66,15 @@ const Chart = () => {
               options={{
                   responsive: true,
                   maintainAspectRatio: false,
+                  //tooltips: {
+                  //  enabled: true,
+                  //  callbacks: {
+                  //    footer: (context) => {
+                  //      const activity = ['line 1', 'line 2'];
+                  //      return activity;
+                  //    }
+                  //  }
+                  //},
                   scales: {
                     y: {
                         grid: {
@@ -79,8 +88,8 @@ const Chart = () => {
                         },
                         title: {
                           display: true,
-                          text: 'Avg Watts',
-                          color: ['orange']
+                          text: 'Average Watts',
+                          color: ['#00cb8d']
                         },
                         tooltip: {
                           enabled: true
@@ -98,7 +107,7 @@ const Chart = () => {
                         },
                         title: {
                           display: true,
-                          text: 'Avg Watts',
+                          text: '% From Fossil Fuels',
                           color: ['orange']
                         },
                         tooltip: {

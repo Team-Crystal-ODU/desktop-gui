@@ -35,29 +35,32 @@ const Chart = () => {
 
     return (
       <div>
-        <div className="ctx" style={{position: 'relative', width: 1200, height: 300, margin: 'auto'}}>
+        <div className="ctx" style={{position: 'relative', width: 1200, height: 250, margin: 'auto'}}>
           <Line
               data= {{
-                  //labels: ['2023-02-16', '2023-02-17', '2023-02-18', '2023-02-19', '2023-02-20'],
+                  labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
                   //labels: chart.chart_data?.map(x => x.hour_ending),
                   //labels: chart.chart_data?.map(x => x.hour_ending.substring(5, 16)),
-                  labels: chart.chart_data?.map(x => x.activity),
+                  //labels: chart.chart_data?.map(x => x.activity),
                   datasets: [{
                         label: 'Average Watts',
-                        data: chart.chart_data?.map(x => x.average_watts),
+                        data: [55, 65, 43, 2, 23, 70, 1, 34, 69, 20, 11, 100],
+                        //data: chart.chart_data?.map(x => x.average_watts),
                         backgroundColor: ['white'],
                         borderColor: ['#00cb8d'],
                         pointBorderColor: ['white'],
                         drawBorder: false,
                         lineTension: 0.4,
-                        stepped: true,
+                        //stepped: true,
                         yAxisID: 'y',
                       },
                       {
                         label: '% From Fossil Fuels',
-                        data: chart.chart_data?.map(x => x.perc_from_fossil_fuels),
+                        data: [0.6, 0.61, 0.45, 0.35, 0.5, 0.7, 0.3, 0.65, 0.3, 0.11, 0.23, 0.27],
+                        //data: chart.chart_data?.map(x => x.perc_from_fossil_fuels),
                         borderColor: ['orange'],
                         backgroundColor: ['white'],
+                        lineTension: 0.4,
                         yAxisID: 'y1',
                       }
                   ]
@@ -66,19 +69,10 @@ const Chart = () => {
               options={{
                   responsive: true,
                   maintainAspectRatio: false,
-                  //tooltips: {
-                  //  enabled: true,
-                  //  callbacks: {
-                  //    footer: (context) => {
-                  //      const activity = ['line 1', 'line 2'];
-                  //      return activity;
-                  //    }
-                  //  }
-                  //},
                   scales: {
                     y: {
                         grid: {
-                          display: true
+                          display: false
                         },
                         border: {
                           display: true

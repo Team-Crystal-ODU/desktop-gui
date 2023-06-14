@@ -60,7 +60,7 @@ export const Login = () => {
         setUser('');
         setPwd('');
         setSuccess(true);
-        navigate("/home");
+        navigate("/");
     }
 
    
@@ -112,7 +112,7 @@ export const Login = () => {
                     <h1>You are logged in!</h1>
                     <br />
                     <p>
-                        <a href="/home">Go to Home</a>
+                        <a href="/">Go to Home</a>
                     </p>
                 </section>
             ) : (

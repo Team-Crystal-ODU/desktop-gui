@@ -9,6 +9,7 @@ import {CiLogout} from 'react-icons/ci'
 import {CgProfile} from 'react-icons/cg'
 import {GiWorld} from 'react-icons/gi'
 import {BiWorld} from 'react-icons/bi'
+import {TiLeaf} from 'react-icons/ti'
 
 // Imported Images ==================>
 import logo from '../../../Assets/logo.png'
@@ -22,15 +23,16 @@ const Top = () => {
         <div className="topSection">
             <div className="headerSection flex">
                 <div className="title">
-                    <a className="logoDiv flex" href="/home">
+                    <a className="logoDiv flex" href="/">
                         {/*<img className="image" src={logo} alt="World Space Logo" />*/}
-                        <BiWorld className="image"/>
-                        <h1>World Space.</h1>
+                        {/*<TiLeaf className="image"/>*/}
+                        <h1>world space.</h1>
                     </a>
                 </div>
 
                 <div className="searchBar flex">
-                    <input type="text" placeholder="Search Dashboard..." />
+                    {/*<input type="text" placeholder="Search Dashboard..." />*/}
+                    <input type="text" />
                     <HiOutlineSearch className="icon"/>
                 </div>
 
@@ -49,12 +51,13 @@ const Top = () => {
                             </li>
                             <li className="dropdownItem">
                                 <CiLogout />
-                                <a href="/">Log Out</a>
+                                <a href="/login">Log Out</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
+            {/*<hr className="nav_line"/>*/}
         </div>
     );
 }

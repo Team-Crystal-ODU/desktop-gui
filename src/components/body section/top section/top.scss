@@ -22,8 +22,10 @@
   }
 
 .topSection {
-    background: var(--PrimaryColor);
+    //background: var(--PrimaryColor);
+    background: var(--bgColor);
     padding: 2rem;
+    margin-bottom: 1rem;
 
     .headerSection {
         justify-content: space-between;
@@ -46,8 +48,10 @@
 
         .searchBar {
             padding: 0.8rem 2rem;
-            background: var(--whiteColor);
+            //background: var(--whiteColor);
+            background: var(--bgColor);
             border-radius: 100px;
+            border: .2rem solid white;
             width: 500px;
             display: flex;
             justify-content: space-between;
@@ -59,7 +63,8 @@
             }
 
             .icon {
-                color: var(--textColor);
+                color: white;
+                font-weight: 700;
                 &:hover {
                     cursor: pointer;
                 }
@@ -157,5 +162,10 @@
                 transition: 0.5s ease;
             }
         }
+    }
+
+    .nav_line {
+        margin-top: 2rem;
+        border-width: .5px;
     }
 }

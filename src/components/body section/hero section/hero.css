@@ -20,23 +20,6 @@
   --smallestFontSize: .75rem;
 }
 
-.heroSection {
-  margin-top: 2rem;
-}
-.heroSection .rank {
-  margin: auto;
-  margin-top: 3rem;
-  margin-bottom: 6rem;
-  width: 100%;
-}
-.heroSection .rank .innerRank {
-  height: 15px;
-  width: 350px;
-  background: var(--whiteColor);
-  border-radius: 100px;
-  margin: auto;
-  overflow: hidden;
-}
 .heroSection .overviewSection {
   justify-content: space-between;
   width: 100%;
@@ -47,6 +30,7 @@
   margin: 1rem;
   margin-bottom: 2rem;
   font-weight: 600;
+  font-size: var(--h2FontSize);
 }
 .heroSection .overviewSection .leftOverview .title .days {
   color: var(--brightGreen);
@@ -62,7 +46,7 @@
   border: 3px solid var(--greenColor);
 }
 .heroSection .overviewSection .leftOverview .scoreContainer .singleItem h3 {
-  font-size: var(--normalFontSize);
+  font-size: var(--h2FontSize);
   color: var(--brightGreen);
 }
 .heroSection .overviewSection .leftOverview .scoreContainer .singleItem .readout_text {

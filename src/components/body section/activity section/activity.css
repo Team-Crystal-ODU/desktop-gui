@@ -35,7 +35,7 @@
   width: 100%;
 }
 .activitySection .overviewSection .leftOverview .chart_title {
-  font-size: var(--normalFontSize);
+  font-size: var(--h2FontSize);
   color: var(--brightGreen);
 }
 .activitySection .overviewSection .leftOverview .chart_container {

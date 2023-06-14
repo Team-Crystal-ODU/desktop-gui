@@ -163,7 +163,7 @@ export const Register = () => {
 
                     <button disabled={!validName || !validPwd || !validMatch ? true : false}>Sign Up</button>
                 </form>
-                <a href="/" className="link-btn">Already have an account? Login here.</a>
+                <a href="/login" className="link-btn">Already have an account? Login here.</a>
             </div>
             )}
         </>

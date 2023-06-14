@@ -36,7 +36,7 @@
             width: 100%;
             
             .chart_title {
-                font-size: var(--normalFontSize);
+                font-size: var(--h2FontSize);
                 color: var(--brightGreen);
             }
 
@@ -76,10 +76,6 @@
                     .game_title {
                         font-size: var(--h2FontSize);
                         color: var(--whiteColor);
-                    }
-
-                    .game_subtitle {
-                        
                     }
                 }
             }

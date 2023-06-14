@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './hero.css';
 import Chart from '../../chart/Chart';
+import users from '../../../data.json'
 
 // Image Imports ============>
 
@@ -16,7 +17,7 @@ import { AiFillCaretUp } from 'react-icons/ai';
 
 const Hero = () => {
     // fetch world space api data
-    const [users, setUser] = useState([]);
+    {/*const [users, setUser] = useState([]);
     useEffect(() => {
        fetch('http://localhost:4005/carbon?user=ecogamer')
        //fetch('http://172.18.12.16:6000/carbon?user=ecogamer')
@@ -28,15 +29,11 @@ const Hero = () => {
           .catch((err) => {
              console.log(err.message);
           });
-    }, []);
+    }, []);*/}
   
     // consume world space api data
     return (
         <div className="heroSection">
-            
-            {/*<div className="rank">
-                <div className="innerRank"></div>
-            </div>*/}
 
             <div className="overviewSection flex"> 
              
